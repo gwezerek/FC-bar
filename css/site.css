@@ -1,0 +1,1900 @@
+/* !============================================= */
+/* ! Variables						  			  */
+/* !============================================= */
+/* !-- Universal ------------------------------------ */
+/* !-- Project ------------------------------------ */
+/* !-- Paths ------------------------------------ */
+/* line 15, ../sass/components/_reset.scss */
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 28, ../sass/components/_reset.scss */
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+/* line 38, ../sass/components/_reset.scss */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+/* line 44, ../sass/components/_reset.scss */
+img {
+  line-height: 0;
+  vertical-align: middle;
+}
+
+/* line 46, ../sass/components/_reset.scss */
+nav ul {
+  list-style: none;
+}
+
+/* line 48, ../sass/components/_reset.scss */
+blockquote, q {
+  quotes: none;
+}
+
+/* line 51, ../sass/components/_reset.scss */
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+/* line 53, ../sass/components/_reset.scss */
+a {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+/* line 55, ../sass/components/_reset.scss */
+ins {
+  background-color: #ff9;
+  color: #000;
+  text-decoration: none;
+}
+
+/* line 57, ../sass/components/_reset.scss */
+mark {
+  background-color: #ff9;
+  color: #000;
+  font-style: italic;
+  font-weight: bold;
+}
+
+/* line 59, ../sass/components/_reset.scss */
+del {
+  text-decoration: line-through;
+}
+
+/* line 61, ../sass/components/_reset.scss */
+abbr[title], dfn[title] {
+  border-bottom: 1px dotted;
+  cursor: help;
+}
+
+/* line 64, ../sass/components/_reset.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 66, ../sass/components/_reset.scss */
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+/* line 68, ../sass/components/_reset.scss */
+input, select {
+  vertical-align: middle;
+}
+
+/* line 81, ../sass/components/_reset.scss */
+body {
+  -webkit-overflow-scrolling: touch;
+}
+
+/* line 83, ../sass/components/_reset.scss */
+select, input, textarea, button {
+  font: 99% sans-serif;
+}
+
+/* line 88, ../sass/components/_reset.scss */
+pre, code, kbd, samp {
+  font-family: monospace, sans-serif;
+}
+
+/* line 96, ../sass/components/_reset.scss */
+body, select, input, textarea {
+  color: #444;
+}
+
+/* line 105, ../sass/components/_reset.scss */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: bold;
+}
+
+/* line 108, ../sass/components/_reset.scss */
+html {
+  overflow-y: scroll;
+}
+
+/* line 112, ../sass/components/_reset.scss */
+a:hover, a:active {
+  outline: none;
+}
+
+/* line 117, ../sass/components/_reset.scss */
+ul, ol {
+  list-style: none;
+}
+
+/* line 118, ../sass/components/_reset.scss */
+ol {
+  list-style-type: decimal;
+}
+
+/* line 121, ../sass/components/_reset.scss */
+nav ul, nav li {
+  margin: 0;
+}
+
+/* line 123, ../sass/components/_reset.scss */
+small {
+  font-size: 85%;
+}
+
+/* line 124, ../sass/components/_reset.scss */
+strong, th {
+  font-weight: bold;
+}
+
+/* line 126, ../sass/components/_reset.scss */
+td, td img {
+  vertical-align: top;
+}
+
+/* line 128, ../sass/components/_reset.scss */
+sub {
+  vertical-align: sub;
+  font-size: smaller;
+}
+
+/* line 129, ../sass/components/_reset.scss */
+sup {
+  vertical-align: super;
+  font-size: smaller;
+}
+
+/* line 131, ../sass/components/_reset.scss */
+pre {
+  padding: 15px;
+  white-space: pre;
+  white-space: pre-wrap;
+  white-space: pre-line;
+  word-wrap: break-word;
+}
+
+/* line 141, ../sass/components/_reset.scss */
+textarea {
+  overflow: auto;
+}
+
+/* line 143, ../sass/components/_reset.scss */
+.ie6 legend, .ie7 legend {
+  margin-left: -7px;
+}
+
+/* line 147, ../sass/components/_reset.scss */
+input[type="radio"] {
+  vertical-align: text-bottom;
+}
+
+/* line 148, ../sass/components/_reset.scss */
+input[type="checkbox"] {
+  vertical-align: bottom;
+}
+
+/* line 149, ../sass/components/_reset.scss */
+.ie7 input[type="checkbox"] {
+  vertical-align: baseline;
+}
+
+/* line 150, ../sass/components/_reset.scss */
+.ie6 input {
+  vertical-align: text-bottom;
+}
+
+/* line 153, ../sass/components/_reset.scss */
+label, input[type=button], input[type=submit], button {
+  cursor: pointer;
+}
+
+/* line 156, ../sass/components/_reset.scss */
+button, input, select, textarea {
+  margin: 0;
+}
+
+/* line 160, ../sass/components/_reset.scss */
+input:invalid, textarea:invalid {
+  border-radius: 1px;
+  -moz-box-shadow: 0px 0px 5px red;
+  -webkit-box-shadow: 0px 0px 5px red;
+  box-shadow: 0px 0px 5px red;
+}
+
+/* line 167, ../sass/components/_reset.scss */
+.no-boxshadow input:invalid,
+.no-boxshadow textarea:invalid {
+  background-color: #f0dddd;
+}
+
+/* line 173, ../sass/components/_reset.scss */
+::-moz-selection {
+  background: #1d78af;
+  color: white;
+  text-shadow: none;
+}
+
+/* line 174, ../sass/components/_reset.scss */
+::selection {
+  background: #1d78af;
+  color: white;
+  text-shadow: none;
+}
+
+/* line 177, ../sass/components/_reset.scss */
+a:link {
+  -webkit-tap-highlight-color: #1d78af;
+}
+
+/* line 181, ../sass/components/_reset.scss */
+button {
+  width: auto;
+  overflow: visible;
+}
+
+/* line 185, ../sass/components/_reset.scss */
+.ie7 img {
+  -ms-interpolation-mode: bicubic;
+}
+
+/* line 193, ../sass/components/_reset.scss */
+.clearfix:before, .clearfix:after {
+  content: "\0020";
+  display: block;
+  height: 0;
+  visibility: hidden;
+}
+
+/* line 197, ../sass/components/_reset.scss */
+.clearfix:after {
+  clear: both;
+}
+
+/* line 199, ../sass/components/_reset.scss */
+.clearfix {
+  zoom: 1;
+}
+
+/* line 207, ../sass/components/_reset.scss */
+.a11y-only {
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px);
+  clip: rect(1px, 1px, 1px, 1px);
+}
+
+@font-face {
+  font-family: 'Portrait Text Web';
+  src: url("/fonts/PortraitText-Regular-Web.eot");
+  src: url("/fonts/PortraitText-Regular-Web.eot?#iefix") format("embedded-opentype"), url("/fonts/PortraitText-Regular-Web.woff") format("woff"), url("/fonts/PortraitText-Regular-Web.ttf") format("truetype"), url("/fonts/PortraitText-Regular-Web.svg#Portrait Text Web") format("svg");
+  font-weight: 400;
+  font-style: normal;
+  font-stretch: normal;
+}
+
+@font-face {
+  font-family: 'Portrait Text Web';
+  src: url("/fonts/PortraitText-RegularItalic-Web.eot");
+  src: url("/fonts/PortraitText-RegularItalic-Web.eot?#iefix") format("embedded-opentype"), url("/fonts/PortraitText-RegularItalic-Web.woff") format("woff"), url("/fonts/PortraitText-RegularItalic-Web.ttf") format("truetype"), url("/fonts/PortraitText-RegularItalic-Web.svg#Portrait Text Web") format("svg");
+  font-weight: 400;
+  font-style: italic;
+  font-stretch: normal;
+}
+
+/* line 793, ../sass/components/_mixins.scss */
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  width: auto;
+}
+
+/* line 7, ../sass/components/_layout.scss */
+.ui-block:last-child,
+.ui-block.last {
+  margin-right: 0;
+}
+
+/* line 7, ../sass/partials/_reset.scss */
+button {
+  background: none;
+  border: none;
+  padding: 0;
+  color: #222222;
+  outline: none;
+}
+
+/* line 15, ../sass/partials/_reset.scss */
+a {
+  color: #222222;
+  text-decoration: none;
+}
+
+/* line 20, ../sass/partials/_reset.scss */
+::selection {
+  background-color: #909090;
+}
+
+/* line 23, ../sass/partials/_reset.scss */
+::-moz-selection {
+  background-color: #909090;
+}
+
+/* line 37, ../sass/partials/_layout.scss */
+.header-wrap {
+  position: relative;
+}
+@media (min-width: 400px) {
+  /* line 37, ../sass/partials/_layout.scss */
+  .header-wrap {
+    width: calc(100% - 10px);
+  }
+}
+@media (min-width: 1070px) {
+  /* line 37, ../sass/partials/_layout.scss */
+  .header-wrap {
+    width: calc(100% - 20px);
+  }
+}
+
+/* line 49, ../sass/partials/_layout.scss */
+.graphic-header {
+  *zoom: 1;
+}
+/* line 38, ../../../../../Applications/LiveReload.app/Contents/Resources/SASS.lrplugin/lib/compass/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
+.graphic-header:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* line 81, ../sass/partials/_layout.scss */
+.graph-img-wrap {
+  *zoom: 1;
+  margin-bottom: 2.5em;
+  margin-right: 10px;
+}
+/* line 38, ../../../../../Applications/LiveReload.app/Contents/Resources/SASS.lrplugin/lib/compass/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
+.graph-img-wrap:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+@media (min-width: 400px) {
+  /* line 81, ../sass/partials/_layout.scss */
+  .graph-img-wrap {
+    margin-right: 20px;
+  }
+}
+@media (min-width: 1070px) {
+  /* line 81, ../sass/partials/_layout.scss */
+  .graph-img-wrap {
+    position: absolute;
+    right: 0;
+    bottom: 5px;
+    margin-bottom: 0;
+    margin-right: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    word-wrap: break-word;
+    _display: inline;
+    _overflow: hidden;
+    _overflow-y: visible;
+    width: 40%;
+    padding-left: 0;
+    padding-right: 12px;
+    margin-right: 8px;
+  }
+}
+@media (min-width: 1280px) {
+  /* line 81, ../sass/partials/_layout.scss */
+  .graph-img-wrap {
+    padding-left: 10px;
+    padding-right: 10px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    word-wrap: break-word;
+    _display: inline;
+    _overflow: hidden;
+    _overflow-y: visible;
+    width: 33.33333%;
+    padding-left: 0;
+    padding-right: 13.33333px;
+    margin-right: 6.66667px;
+  }
+}
+@media (min-width: 1480px) {
+  /* line 81, ../sass/partials/_layout.scss */
+  .graph-img-wrap {
+    padding-left: 10px;
+    padding-right: 10px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    word-wrap: break-word;
+    _display: inline;
+    _overflow: hidden;
+    _overflow-y: visible;
+    width: 28.57143%;
+    padding-left: 0;
+    padding-right: 14.28571px;
+    margin-right: 5.71429px;
+  }
+}
+
+/* line 109, ../sass/partials/_layout.scss */
+.graph-img {
+  width: 100%;
+}
+
+@media (min-width: 1280px) {
+  /* line 113, ../sass/partials/_layout.scss */
+  .graph-img-1 {
+    display: none;
+  }
+}
+
+/* line 119, ../sass/partials/_layout.scss */
+.graph-img-2 {
+  display: none;
+}
+@media (min-width: 1280px) {
+  /* line 119, ../sass/partials/_layout.scss */
+  .graph-img-2 {
+    display: block;
+  }
+}
+
+/* line 126, ../sass/partials/_layout.scss */
+.balloon-list {
+  margin-bottom: 2em;
+  min-height: 1000px;
+  *zoom: 1;
+}
+/* line 38, ../../../../../Applications/LiveReload.app/Contents/Resources/SASS.lrplugin/lib/compass/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
+.balloon-list:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* line 132, ../sass/partials/_layout.scss */
+.balloon-mod {
+  float: left;
+  padding-left: 10px;
+  padding-right: 10px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  word-wrap: break-word;
+  _display: inline;
+  _overflow: hidden;
+  _overflow-y: visible;
+  width: 100%;
+  padding-left: 0;
+  padding-right: 0px;
+  margin-right: 0px;
+  margin-right: 0;
+  margin-bottom: 10px;
+}
+@media (min-width: 400px) {
+  /* line 132, ../sass/partials/_layout.scss */
+  .balloon-mod {
+    padding-left: 10px;
+    padding-right: 10px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    word-wrap: break-word;
+    _display: inline;
+    _overflow: hidden;
+    _overflow-y: visible;
+    width: 50%;
+    padding-left: 0;
+    padding-right: 10px;
+    margin-right: -10px;
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+}
+@media (min-width: 680px) {
+  /* line 132, ../sass/partials/_layout.scss */
+  .balloon-mod {
+    padding-left: 10px;
+    padding-right: 10px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    word-wrap: break-word;
+    _display: inline;
+    _overflow: hidden;
+    _overflow-y: visible;
+    width: 33.33333%;
+    padding-left: 0;
+    padding-right: 13.33333px;
+    margin-right: -13.33333px;
+    margin-right: 0;
+  }
+}
+@media (min-width: 870px) {
+  /* line 132, ../sass/partials/_layout.scss */
+  .balloon-mod {
+    padding-left: 10px;
+    padding-right: 10px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    word-wrap: break-word;
+    _display: inline;
+    _overflow: hidden;
+    _overflow-y: visible;
+    width: 25%;
+    padding-left: 0;
+    padding-right: 15px;
+    margin-right: -15px;
+    margin-right: 0;
+  }
+}
+@media (min-width: 1070px) {
+  /* line 132, ../sass/partials/_layout.scss */
+  .balloon-mod {
+    padding-left: 10px;
+    padding-right: 10px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    word-wrap: break-word;
+    _display: inline;
+    _overflow: hidden;
+    _overflow-y: visible;
+    width: 20%;
+    padding-left: 0;
+    padding-right: 16px;
+    margin-right: 4px;
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+}
+@media (min-width: 1280px) {
+  /* line 132, ../sass/partials/_layout.scss */
+  .balloon-mod {
+    padding-left: 10px;
+    padding-right: 10px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    word-wrap: break-word;
+    _display: inline;
+    _overflow: hidden;
+    _overflow-y: visible;
+    width: 16.66667%;
+    padding-left: 0;
+    padding-right: 16.66667px;
+    margin-right: -16.66667px;
+    margin-right: 0;
+  }
+}
+@media (min-width: 1480px) {
+  /* line 132, ../sass/partials/_layout.scss */
+  .balloon-mod {
+    padding-left: 10px;
+    padding-right: 10px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    word-wrap: break-word;
+    _display: inline;
+    _overflow: hidden;
+    _overflow-y: visible;
+    width: 14.28571%;
+    padding-left: 0;
+    padding-right: 17.14286px;
+    margin-right: -17.14286px;
+    margin-right: 0;
+  }
+}
+
+@font-face {
+  font-weight: 500;
+  font-style: normal;
+  font-family: "FCKaiserCond";
+  src: url("http://www.fastcodesign.com/fonts/fckaiser/fckaiser_cond-medium-webfont.eot");
+  src: url("http://www.fastcodesign.com/fonts/fckaiser/fckaiser_cond-medium-webfont.eot?#iefix") format("embedded-opentype"), url("http://www.fastcodesign.com/fonts/fckaiser/fckaiser_cond-medium-webfont.woff") format("woff"), url("http://www.fastcodesign.com/fonts/fckaiser/fckaiser_cond-medium-webfont.ttf") format("truetype"), url("http://www.fastcodesign.com/fonts/fckaiser/fckaiser_cond-medium-webfont.svg#FCKaiserCond") format("svg");
+}
+
+@font-face {
+  font-weight: 400;
+  font-style: normal;
+  font-stretch: normal;
+  font-family: "FCKaiserCond";
+  src: url("http://www.fastcodesign.com/fonts/fckaiser/fckaiser_cond-regular-webfont.eot?") format("embedded-opentype"), url("http://www.fastcodesign.com/fonts/fckaiser/fckaiser_cond-regular-webfont.woff") format("woff"), url("http://www.fastcodesign.com/fonts/fckaiser/fckaiser_cond-regular-webfont.svg") format("svg"), url("http://www.fastcodesign.com/fonts/fckaiser/fckaiser_cond-regular-webfont.ttf") format("opentype");
+}
+
+@font-face {
+  font-weight: 200;
+  font-style: normal;
+  font-stretch: normal;
+  font-family: "FCKaiserCond";
+  src: url("http://www.fastcodesign.com/fonts/fckaiser/fckaiser_cond-extralight-webfont.eot?") format("embedded-opentype"), url("http://www.fastcodesign.com/fonts/fckaiser/fckaiser_cond-extralight-webfont.woff") format("woff"), url("http://www.fastcodesign.com/fonts/fckaiser/fckaiser_cond-extralight-webfont.svg") format("svg"), url("http://www.fastcodesign.com/fonts/fckaiser/fckaiser_cond-extralight-webfont.ttf") format("opentype");
+}
+
+@font-face {
+  font-weight: 200;
+  font-style: normal;
+  font-stretch: normal;
+  font-family: "FCKaiserXCond";
+  src: url("http://www.fastcodesign.com/fonts/fckaiser/fckaiser_xcond-extralight-webfont.eot?") format("embedded-opentype"), url("http://www.fastcodesign.com/fonts/fckaiser/fckaiser_xcond-extralight-webfont.woff") format("woff"), url("http://www.fastcodesign.com/fonts/fckaiser/fckaiser_xcond-extralight-webfont.svg") format("svg"), url("http://www.fastcodesign.com/fonts/fckaiser/fckaiser_xcond-extralight-webfont.ttf") format("opentype");
+}
+
+@font-face {
+  font-weight: 400;
+  font-style: normal;
+  font-stretch: normal;
+  font-family: "FCKaiserXCond";
+  src: url("http://www.fastcodesign.com/fonts/fckaiser/fckaiser_xcond-regular-webfont.eot?") format("embedded-opentype"), url("http://www.fastcodesign.com/fonts/fckaiser/fckaiser_xcond-regular-webfont.woff") format("woff"), url("http://www.fastcodesign.com/fonts/fckaiser/fckaiser_xcond-regular-webfont.svg") format("svg"), url("http://www.fastcodesign.com/fonts/fckaiser/fckaiser_xcond-regular-webfont.ttf") format("opentype");
+}
+
+@font-face {
+  font-weight: 400;
+  font-style: normal;
+  font-stretch: normal;
+  font-family: "FCZizouSans";
+  src: url("http://www.fastcodesign.com/fonts/fczizou/fczizou_sans-regular-webfont.eot?") format("embedded-opentype"), url("http://www.fastcodesign.com/fonts/fczizou/fczizou_sans-regular-webfont.woff") format("woff"), url("http://www.fastcodesign.com/fonts/fczizou/fczizou_sans-regular-webfont.svg") format("svg"), url("http://www.fastcodesign.com/fonts/fczizou/fczizou_sans-regular-webfont.ttf") format("opentype");
+}
+
+@font-face {
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  font-family: "FCZizouSans";
+  src: url("http://www.fastcodesign.com/fonts/fczizou/fczizou_sans-medium-webfont.eot?") format("embedded-opentype"), url("http://www.fastcodesign.com/fonts/fczizou/fczizou_sans-medium-webfont.woff") format("woff"), url("http://www.fastcodesign.com/fonts/fczizou/fczizou_sans-medium-webfont.svg") format("svg"), url("http://www.fastcodesign.com/fonts/fczizou/fczizou_sans-medium-webfont.ttf") format("opentype");
+}
+
+@font-face {
+  font-weight: 700;
+  font-style: normal;
+  font-stretch: normal;
+  font-family: "FCZizouSans";
+  src: url("http://www.fastcodesign.com/fonts/fczizou/fczizou_sans-bold-webfont.eot?") format("embedded-opentype"), url("http://www.fastcodesign.com/fonts/fczizou/fczizou_sans-bold-webfont.woff") format("woff"), url("http://www.fastcodesign.com/fonts/fczizou/fczizou_sans-bold-webfont.svg") format("svg"), url("http://www.fastcodesign.com/fonts/fczizou/fczizou_sans-bold-webfont.ttf") format("opentype");
+}
+
+@font-face {
+  font-weight: 200;
+  font-style: normal;
+  font-stretch: normal;
+  font-family: "FCZizouSlab";
+  src: url("http://www.fastcodesign.com/fonts/fczizou/fczizou_slab-thin-webfont.eot?") format("embedded-opentype"), url("http://www.fastcodesign.com/fonts/fczizou/fczizou_slab-thin-webfont.woff") format("woff"), url("http://www.fastcodesign.com/fonts/fczizou/fczizou_slab-thin-webfont.svg") format("svg"), url("http://www.fastcodesign.com/fonts/fczizou/fczizou_slab-thin-webfont.ttf") format("opentype");
+}
+
+@font-face {
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  font-family: "FCZizouSlab";
+  src: url("http://www.fastcodesign.com/fonts/fczizou/fczizou_slab-light-webfont.eot?") format("embedded-opentype"), url("http://www.fastcodesign.com/fonts/fczizou/fczizou_slab-light-webfont.woff") format("woff"), url("http://www.fastcodesign.com/fonts/fczizou/fczizou_slab-light-webfont.svg") format("svg"), url("http://www.fastcodesign.com/fonts/fczizou/fczizou_slab-light-webfont.ttf") format("opentype");
+}
+
+@font-face {
+  font-weight: 400;
+  font-style: normal;
+  font-stretch: normal;
+  font-family: "FCZizouSlab";
+  src: url("http://www.fastcodesign.com/fonts/fczizou/fczizou_slab-regular-webfont.eot?") format("embedded-opentype"), url("http://www.fastcodesign.com/fonts/fczizou/fczizou_slab-regular-webfont.woff") format("woff"), url("http://www.fastcodesign.com/fonts/fczizou/fczizou_slab-regular-webfont.svg") format("svg"), url("http://www.fastcodesign.com/fonts/fczizou/fczizou_slab-regular-webfont.ttf") format("opentype");
+}
+
+@font-face {
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  font-family: "FCZizouSlab";
+  src: url("http://www.fastcodesign.com/fonts/fczizou/fczizou_slab-medium-webfont.eot?") format("embedded-opentype"), url("http://www.fastcodesign.com/fonts/fczizou/fczizou_slab-medium-webfont.woff") format("woff"), url("http://www.fastcodesign.com/fonts/fczizou/fczizou_slab-medium-webfont.svg") format("svg"), url("http://www.fastcodesign.com/fonts/fczizou/fczizou_slab-medium-webfont.ttf") format("opentype");
+}
+
+@font-face {
+  font-weight: 700;
+  font-style: normal;
+  font-stretch: normal;
+  font-family: "FCZizouSlab";
+  src: url("http://www.fastcodesign.com/fonts/fczizou/fczizou_slab-bold-webfont.eot?") format("embedded-opentype"), url("http://www.fastcodesign.com/fonts/fczizou/fczizou_slab-bold-webfont.woff") format("woff"), url("http://www.fastcodesign.com/fonts/fczizou/fczizou_slab-bold-webfont.svg") format("svg"), url("http://www.fastcodesign.com/fonts/fczizou/fczizou_slab-bold-webfont.ttf") format("opentype");
+}
+
+@font-face {
+  font-weight: 800;
+  font-style: normal;
+  font-stretch: normal;
+  font-family: "FCZizouSlab";
+  src: url("http://www.fastcodesign.com/fonts/fczizou/fczizou_slab-black-webfont.eot?") format("embedded-opentype"), url("http://www.fastcodesign.com/fonts/fczizou/fczizou_slab-black-webfont.woff") format("woff"), url("http://www.fastcodesign.com/fonts/fczizou/fczizou_slab-black-webfont.svg") format("svg"), url("http://www.fastcodesign.com/fonts/fczizou/fczizou_slab-black-webfont.ttf") format("opentype");
+}
+
+@font-face {
+  font-weight: 400;
+  font-style: normal;
+  font-stretch: normal;
+  font-family: "FCKaiser";
+  src: url("http://www.fastcodesign.com/fonts/fckaiser/fckaiser-regular-webfont.eot?") format("embedded-opentype"), url("http://www.fastcodesign.com/fonts/fckaiser/fckaiser-regular-webfont.woff") format("woff"), url("http://www.fastcodesign.com/fonts/fckaiser/fckaiser-regular-webfont.svg") format("svg"), url("http://www.fastcodesign.com/fonts/fckaiser/fckaiser-regular-webfont.ttf") format("opentype");
+}
+
+@font-face {
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  font-family: "FCKaiser";
+  src: url("http://www.fastcodesign.com/fonts/fckaiser/fckaiser-medium-webfont.eot?") format("embedded-opentype"), url("http://www.fastcodesign.com/fonts/fckaiser/fckaiser-medium-webfont.woff") format("woff"), url("http://www.fastcodesign.com/fonts/fckaiser/fckaiser-medium-webfont.svg") format("svg"), url("http://www.fastcodesign.com/fonts/fckaiser/fckaiser-medium-webfont.ttf") format("opentype");
+}
+
+@font-face {
+  font-weight: 100;
+  font-style: normal;
+  font-stretch: normal;
+  font-family: "MuseoSans";
+  src: url("http://www.fastcodesign.com/fonts/museosans/museosans-100-webfont.eot?") format("embedded-opentype"), url("http://www.fastcodesign.com/fonts/museosans/museosans-100-webfont.woff") format("woff"), url("http://www.fastcodesign.com/fonts/museosans/museosans-100-webfont.svg") format("svg"), url("http://www.fastcodesign.com/fonts/museosans/museosans-100-webfont.ttf") format("opentype");
+}
+
+@font-face {
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  font-family: "MuseoSans";
+  src: url("http://www.fastcodesign.com/fonts/museosans/museosans-300-webfont.eot?") format("embedded-opentype"), url("http://www.fastcodesign.com/fonts/museosans/museosans-300-webfont.woff") format("woff"), url("http://www.fastcodesign.com/fonts/museosans/museosans-300-webfont.svg") format("svg"), url("http://www.fastcodesign.com/fonts/museosans/museosans-300-webfont.ttf") format("opentype");
+}
+
+@font-face {
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  font-family: "MuseoSans";
+  src: url("http://www.fastcodesign.com/fonts/museosans/museosans-500-webfont.eot?") format("embedded-opentype"), url("http://www.fastcodesign.com/fonts/museosans/museosans-500-webfont.woff") format("woff"), url("http://www.fastcodesign.com/fonts/museosans/museosans-500-webfont.svg") format("svg"), url("http://www.fastcodesign.com/fonts/museosans/museosans-500-webfont.ttf") format("opentype");
+}
+
+@font-face {
+  font-weight: 700;
+  font-style: normal;
+  font-stretch: normal;
+  font-family: "MuseoSans";
+  src: url("http://www.fastcodesign.com/fonts/museosans/museosans-700-webfont.eot?") format("embedded-opentype"), url("http://www.fastcodesign.com/fonts/museosans/museosans-700-webfont.woff") format("woff"), url("http://www.fastcodesign.com/fonts/museosans/museosans-700-webfont.svg") format("svg"), url("http://www.fastcodesign.com/fonts/museosans/museosans-700-webfont.ttf") format("opentype");
+}
+
+@font-face {
+  font-weight: 700;
+  font-style: normal;
+  font-stretch: normal;
+  font-family: "Grumpy-Black36";
+  src: url("http://www.fastcodesign.com/fonts/grumpy/grumpy-black36-webfont.eot?#iefix") format("embedded-opentype"), url("http://www.fastcodesign.com/fonts/grumpy/grumpy-black36-webfont.woff") format("woff"), url("http://www.fastcodesign.com/fonts/grumpy/grumpy-black36-webfont.svg") format("svg"), url("http://www.fastcodesign.com/fonts/grumpy/grumpy-black36-webfont.ttf") format("opentype");
+}
+
+@font-face {
+  font-weight: 600;
+  font-style: normal;
+  font-stretch: normal;
+  font-family: "CaslonFS";
+  src: url("http://www.fastcodesign.com/fonts/caslonfs/caslonfs-bold-webfont.eot?#iefix") format("eot"), url("http://www.fastcodesign.com/fonts/caslonfs/caslonfs-bold-webfont.woff") format("woff"), url("http://www.fastcodesign.com/fonts/caslonfs/caslonfs-bold-webfont.ttf") format("truetype"), url("http://www.fastcodesign.com/fonts/caslonfs/caslonfs-bold-webfont.svg#webfontKSc4AWhd") format("svg");
+}
+
+@font-face {
+  font-weight: 600;
+  font-style: italic;
+  font-family: "CaslonFS";
+  src: url("http://www.fastcodesign.com/fonts/caslonfs/caslonfs-bold_italic-webfont.eot?#iefix") format("eot"), url("http://www.fastcodesign.com/fonts/caslonfs/caslonfs-bold_italic-webfont.woff") format("woff"), url("http://www.fastcodesign.com/fonts/caslonfs/caslonfs-bold_italic-webfont.ttf") format("truetype"), url("http://www.fastcodesign.com/fonts/caslonfs/caslonfs-bold_italic-webfont.svg#webfontqJplC6D8") format("svg");
+}
+
+@font-face {
+  font-weight: 400;
+  font-style: normal;
+  font-family: "CaslonFS";
+  src: url("http://www.fastcodesign.com/fonts/caslonfs/caslonfs-book-webfont.eot?#iefix") format("eot"), url("http://www.fastcodesign.com/fonts/caslonfs/caslonfs-book-webfont.woff") format("woff"), url("http://www.fastcodesign.com/fonts/caslonfs/caslonfs-book-webfont.ttf") format("truetype"), url("http://www.fastcodesign.com/fonts/caslonfs/caslonfs-book-webfont.svg#webfontla9WkFWh") format("svg");
+}
+
+@font-face {
+  font-weight: 400;
+  font-style: italic;
+  font-family: "CaslonFS";
+  src: url("http://www.fastcodesign.com/fonts/caslonfs/caslonfs-book_italic-webfont.eot?#iefix") format("eot"), url("http://www.fastcodesign.com/fonts/caslonfs/caslonfs-book_italic-webfont.woff") format("woff"), url("http://www.fastcodesign.com/fonts/caslonfs/caslonfs-book_italic-webfont.ttf") format("truetype"), url("http://www.fastcodesign.com/fonts/caslonfs/caslonfs-book_italic-webfont.svg#webfont2p2hqYg5") format("svg");
+}
+
+@font-face {
+  font-weight: 500;
+  font-style: normal;
+  font-family: "CaslonFS";
+  src: url("http://www.fastcodesign.com/fonts/caslonfs/caslonfs-medium-webfont.eot?#iefix") format("eot"), url("http://www.fastcodesign.com/fonts/caslonfs/caslonfs-medium-webfont.woff") format("woff"), url("http://www.fastcodesign.com/fonts/caslonfs/caslonfs-medium-webfont.ttf") format("truetype"), url("http://www.fastcodesign.com/fonts/caslonfs/caslonfs-medium-webfont.svg#webfontsq83qGc8") format("svg");
+}
+
+@font-face {
+  font-weight: 500;
+  font-style: italic;
+  font-family: "CaslonFS";
+  src: url("http://www.fastcodesign.com/fonts/caslonfs/caslonfs-medium_italic-webfont.eot?#iefix") format("eot"), url("http://www.fastcodesign.com/fonts/caslonfs/caslonfs-medium_italic-webfont.woff") format("woff"), url("http://www.fastcodesign.com/fonts/caslonfs/caslonfs-medium_italic-webfont.ttf") format("truetype"), url("http://www.fastcodesign.com/fonts/caslonfs/caslonfs-medium_italic-webfont.svg#webfontydPYhPC6") format("svg");
+}
+
+@font-face {
+  font-weight: normal;
+  font-style: normal;
+  font-family: 'FontAwesome';
+  src: url("http://www.fastcodesign.com/fonts/fontawesome/fontawesome-webfont.eot?v=4.0.3");
+  src: url("http://www.fastcodesign.com/fonts/fontawesome/fontawesome-webfont.eot?#iefix&v=4.0.3") format("embedded-opentype"), url("http://www.fastcodesign.com/fonts/fontawesome/fontawesome-webfont.woff?v=4.0.3") format("woff"), url("http://www.fastcodesign.com/fonts/fontawesome/fontawesome-webfont.ttf?v=4.0.3") format("truetype"), url("http://www.fastcodesign.com/fonts/fontawesome/fontawesome-webfont.svg?v=4.0.3#fontawesomeregular") format("svg");
+}
+
+/* line 203, ../sass/partials/_type.scss */
+.icon, [class^="icon-"], [class*=" icon-"] {
+  display: inline-block;
+  font-weight: normal;
+  font-style: normal;
+  font-family: FontAwesome;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* line 213, ../sass/partials/_type.scss */
+.icon-spin {
+  -webkit-animation: spin 2s infinite linear;
+  -moz-animation: spin 2s infinite linear;
+  -o-animation: spin 2s infinite linear;
+  animation: spin 2s infinite linear;
+}
+
+@-moz-keyframes spin {
+  /* line 220, ../sass/partials/_type.scss */
+  0% {
+    -moz-transform: rotate(0deg);
+  }
+
+  /* line 223, ../sass/partials/_type.scss */
+  100% {
+    -moz-transform: rotate(359deg);
+  }
+}
+
+@-webkit-keyframes spin {
+  /* line 227, ../sass/partials/_type.scss */
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+
+  /* line 230, ../sass/partials/_type.scss */
+  100% {
+    -webkit-transform: rotate(359deg);
+  }
+}
+
+@-o-keyframes spin {
+  /* line 234, ../sass/partials/_type.scss */
+  0% {
+    -o-transform: rotate(0deg);
+  }
+
+  /* line 237, ../sass/partials/_type.scss */
+  100% {
+    -o-transform: rotate(359deg);
+  }
+}
+
+@-ms-keyframes spin {
+  /* line 241, ../sass/partials/_type.scss */
+  0% {
+    -ms-transform: rotate(0deg);
+  }
+
+  /* line 244, ../sass/partials/_type.scss */
+  100% {
+    -ms-transform: rotate(359deg);
+  }
+}
+
+@keyframes spin {
+  /* line 248, ../sass/partials/_type.scss */
+  0% {
+    transform: rotate(0deg);
+  }
+
+  /* line 251, ../sass/partials/_type.scss */
+  100% {
+    transform: rotate(359deg);
+  }
+}
+
+/* line 254, ../sass/partials/_type.scss */
+.icon-rotate-90 {
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=$rotation);
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+
+/* line 262, ../sass/partials/_type.scss */
+.icon-rotate-180 {
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=$rotation);
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+
+/* line 270, ../sass/partials/_type.scss */
+.icon-rotate-270 {
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=$rotation);
+  -webkit-transform: rotate(270deg);
+  -moz-transform: rotate(270deg);
+  -ms-transform: rotate(270deg);
+  -o-transform: rotate(270deg);
+  transform: rotate(270deg);
+}
+
+/* line 278, ../sass/partials/_type.scss */
+.icon-flip-horizontal {
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=$rotation);
+  -webkit-transform: scale(-1, 1);
+  -moz-transform: scale(-1, 1);
+  -ms-transform: scale(-1, 1);
+  -o-transform: scale(-1, 1);
+  transform: scale(-1, 1);
+}
+
+/* line 286, ../sass/partials/_type.scss */
+.icon-flip-vertical {
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=$rotation);
+  -webkit-transform: scale(1, -1);
+  -moz-transform: scale(1, -1);
+  -ms-transform: scale(1, -1);
+  -o-transform: scale(1, -1);
+  transform: scale(1, -1);
+}
+
+/* line 294, ../sass/partials/_type.scss */
+.icon-refresh:before {
+  content: "\f021";
+}
+
+/* line 301, ../sass/partials/_type.scss */
+.inline-link {
+  -webkit-transition: color 0.2s ease-in-out;
+  -moz-transition: color 0.2s ease-in-out;
+  -o-transition: color 0.2s ease-in-out;
+  transition: color 0.2s ease-in-out;
+  color: #7a7a7a;
+}
+/* line 34, ../sass/components/_mixins.scss */
+.inline-link:hover {
+  color: #222222;
+}
+
+/* line 305, ../sass/partials/_type.scss */
+body {
+  font-weight: 300;
+  font-style: normal;
+  font-size: 16px;
+  font-family: "MuseoSans", Helvetica, Arial, sans-serif;
+}
+
+/* line 313, ../sass/partials/_type.scss */
+h1, h2, h3, h4, h5, h6, .graphic-game {
+  color: #222222;
+  font-weight: 500;
+  font-style: normal;
+  font-family: "FCKaiserCond", Helvetica, Arial, sans-serif;
+  text-rendering: optimizeLegibility;
+}
+
+/* line 3, ../sass/partials/_quiz.scss */
+.question-mod {
+  border-bottom: 1px solid #ededed;
+}
+/* line 5, ../sass/partials/_quiz.scss */
+.question-mod:last-child {
+  border-bottom: 0px;
+}
+
+/* line 10, ../sass/partials/_quiz.scss */
+.macys-graphic {
+  margin-bottom: 1.875em;
+}
+
+/* line 14, ../sass/partials/_quiz.scss */
+.question {
+  margin-bottom: 0.3125em;
+  font-family: "MuseoSans",Helvetica,Arial,sans-serif;
+  font-size: 1em;
+}
+
+/* line 20, ../sass/partials/_quiz.scss */
+.question-number {
+  display: none;
+}
+
+/* line 24, ../sass/partials/_quiz.scss */
+.question-text {
+  display: -moz-inline-stack;
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  zoom: 1;
+  *display: inline;
+  margin: 3.125em 0.9375em 3.125em 0;
+  width: 260px;
+}
+
+/* line 30, ../sass/partials/_quiz.scss */
+.option-wrap {
+  margin-bottom: 0.3125em;
+  margin-left: 1.875em;
+  list-style-type: circle;
+}
+
+/* line 36, ../sass/partials/_quiz.scss */
+.option {
+  -webkit-transition: color 0.3s ease-in-out;
+  -moz-transition: color 0.3s ease-in-out;
+  -o-transition: color 0.3s ease-in-out;
+  transition: color 0.3s ease-in-out;
+  display: -moz-inline-stack;
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  zoom: 1;
+  *display: inline;
+  color: #999999;
+  cursor: pointer;
+}
+/* line 41, ../sass/partials/_quiz.scss */
+.option:hover {
+  color: #222222;
+}
+
+/* line 46, ../sass/partials/_quiz.scss */
+.option-on {
+  list-style-type: disc;
+  font-weight: 500;
+}
+/* line 49, ../sass/partials/_quiz.scss */
+.option-on .option {
+  color: #222222;
+}
+/* line 51, ../sass/partials/_quiz.scss */
+.option-on .option:hover {
+  color: #222222;
+}
+
+/* line 57, ../sass/partials/_quiz.scss */
+.answered:hover {
+  color: #999999;
+}
+
+/* line 61, ../sass/partials/_quiz.scss */
+.results {
+  display: none;
+}
+
+/* line 65, ../sass/partials/_quiz.scss */
+.results-on {
+  display: block;
+}
+
+/* line 69, ../sass/partials/_quiz.scss */
+svg {
+  -webkit-transition: width 0.3s ease-in-out;
+  -moz-transition: width 0.3s ease-in-out;
+  -o-transition: width 0.3s ease-in-out;
+  transition: width 0.3s ease-in-out;
+  -webkit-transition: height 0.3s ease-in-out;
+  -moz-transition: height 0.3s ease-in-out;
+  -o-transition: height 0.3s ease-in-out;
+  transition: height 0.3s ease-in-out;
+}
+
+/* line 74, ../sass/partials/_quiz.scss */
+.chart-off {
+  width: 0;
+  height: 0;
+}
+
+/* line 79, ../sass/partials/_quiz.scss */
+.chart-on {
+  width: auto;
+  height: auto;
+}
+
+/* line 84, ../sass/partials/_quiz.scss */
+.pie {
+  display: -moz-inline-stack;
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  zoom: 1;
+  *display: inline;
+}
+
+/* line 88, ../sass/partials/_quiz.scss */
+.pie-label, .mid-copy {
+  font-weight: 300;
+  font-size: 0.625em;
+  font-family: "MuseoSans",Helvetica,Arial,sans-serif;
+  fill: #999999;
+}
+
+/* line 95, ../sass/partials/_quiz.scss */
+.mid-percent {
+  letter-spacing: 0.75px;
+  font-weight: 500;
+  font-size: 1.875em;
+  font-family: "FCKaiserCond", Helvetica, Arial, sans-serif;
+}
+
+/* line 102, ../sass/partials/_quiz.scss */
+.mid-copy {
+  fill: #999999;
+}
+
+/* line 26, ../sass/site.scss */
+body {
+  margin: 0 auto;
+  max-width: 623px;
+  height: 100%;
+  padding-top: 1.25em;
+}
+@media (min-width: 400px) {
+  /* line 26, ../sass/site.scss */
+  body {
+    padding: 1.25em;
+  }
+}
+@media (min-width: 680px) {
+  /* line 26, ../sass/site.scss */
+  body {
+    padding-top: 2.5em;
+  }
+}
+@media (min-width: 1070px) {
+  /* line 26, ../sass/site.scss */
+  body {
+    padding-top: 3.75em;
+  }
+}
+
+/* line 44, ../sass/site.scss */
+article {
+  margin: 0 auto;
+  padding: 0 1.25em;
+  max-width: 623px;
+  height: 100%;
+  border-right: 1px solid #ededed;
+  border-left: 1px solid #ededed;
+  background: white;
+}
+@media (min-width: 680px) {
+  /* line 44, ../sass/site.scss */
+  article {
+    padding: 0 1.25em;
+  }
+}
+
+/* line 63, ../sass/site.scss */
+.graphic-header {
+  position: relative;
+  margin-bottom: 0.625em;
+}
+
+@media (min-width: 680px) {
+  /* line 71, ../sass/site.scss */
+  .mobile-logo {
+    display: none;
+  }
+}
+
+/* line 77, ../sass/site.scss */
+.graphic-title {
+  margin-bottom: 30px;
+  font-size: 3em;
+  line-height: 100%;
+}
+@media (min-width: 680px) {
+  /* line 77, ../sass/site.scss */
+  .graphic-title {
+    font-size: 3.75em;
+  }
+}
+
+/* line 96, ../sass/site.scss */
+.fc-logo {
+  position: absolute;
+  display: none;
+  width: 60px;
+}
+@media (min-width: 680px) {
+  /* line 96, ../sass/site.scss */
+  .fc-logo {
+    display: block;
+  }
+}
+
+/* line 111, ../sass/site.scss */
+.graphic-dek {
+  margin-bottom: 0.3125em;
+  font-size: 1em;
+  font-family: "MuseoSans",Helvetica,Arial,sans-serif;
+  line-height: 130%;
+}
+
+/* line 118, ../sass/site.scss */
+.graphic-intro {
+  font-weight: 300;
+  font-size: 0.9375em;
+  font-family: "MuseoSans",Helvetica,Arial,sans-serif;
+  line-height: 23px;
+}
+
+/* line 125, ../sass/site.scss */
+.balloon-mod {
+  position: relative;
+  background-size: 80%;
+}
+/* line 129, ../sass/site.scss */
+.balloon-mod:nth-child(n+0):nth-child(-n+2) .balloon-wrap-front, .balloon-mod:nth-child(n+0):nth-child(-n+2) .balloon-wrap-back, .balloon-mod:nth-child(n+0):nth-child(-n+2) .flipper {
+  background-color: #ffdf80;
+}
+/* line 134, ../sass/site.scss */
+.balloon-mod:nth-child(n+3):nth-child(-n+16) .balloon-wrap-front, .balloon-mod:nth-child(n+3):nth-child(-n+16) .balloon-wrap-back, .balloon-mod:nth-child(n+3):nth-child(-n+16) .flipper {
+  background-color: #ffb581;
+}
+/* line 139, ../sass/site.scss */
+.balloon-mod:nth-child(n+17):nth-child(-n+18) .balloon-wrap-front, .balloon-mod:nth-child(n+17):nth-child(-n+18) .balloon-wrap-back, .balloon-mod:nth-child(n+17):nth-child(-n+18) .flipper {
+  background-color: #ff8a80;
+}
+/* line 144, ../sass/site.scss */
+.balloon-mod:nth-child(n+19):nth-child(-n+20) .balloon-wrap-front, .balloon-mod:nth-child(n+19):nth-child(-n+20) .balloon-wrap-back, .balloon-mod:nth-child(n+19):nth-child(-n+20) .flipper {
+  background-color: #ff81a0;
+}
+/* line 149, ../sass/site.scss */
+.balloon-mod:nth-child(n+21):nth-child(-n+27) .balloon-wrap-front, .balloon-mod:nth-child(n+21):nth-child(-n+27) .balloon-wrap-back, .balloon-mod:nth-child(n+21):nth-child(-n+27) .flipper {
+  background-color: #ff81cb;
+}
+/* line 154, ../sass/site.scss */
+.balloon-mod:nth-child(n+28):nth-child(-n+29) .balloon-wrap-front, .balloon-mod:nth-child(n+28):nth-child(-n+29) .balloon-wrap-back, .balloon-mod:nth-child(n+28):nth-child(-n+29) .flipper {
+  background-color: #ff81f5;
+}
+/* line 159, ../sass/site.scss */
+.balloon-mod:nth-child(n+30):nth-child(-n+44) .balloon-wrap-front, .balloon-mod:nth-child(n+30):nth-child(-n+44) .balloon-wrap-back, .balloon-mod:nth-child(n+30):nth-child(-n+44) .flipper {
+  background-color: #df81ff;
+}
+/* line 164, ../sass/site.scss */
+.balloon-mod:nth-child(n+45):nth-child(-n+64) .balloon-wrap-front, .balloon-mod:nth-child(n+45):nth-child(-n+64) .balloon-wrap-back, .balloon-mod:nth-child(n+45):nth-child(-n+64) .flipper {
+  background-color: #b681ff;
+}
+/* line 169, ../sass/site.scss */
+.balloon-mod:nth-child(n+65):nth-child(-n+88) .balloon-wrap-front, .balloon-mod:nth-child(n+65):nth-child(-n+88) .balloon-wrap-back, .balloon-mod:nth-child(n+65):nth-child(-n+88) .flipper {
+  background-color: #9288ff;
+}
+/* line 174, ../sass/site.scss */
+.balloon-mod:nth-child(n+89):nth-child(-n+95) .balloon-wrap-front, .balloon-mod:nth-child(n+89):nth-child(-n+95) .balloon-wrap-back, .balloon-mod:nth-child(n+89):nth-child(-n+95) .flipper {
+  background-color: #81a0ff;
+}
+
+/* line 180, ../sass/site.scss */
+.balloon-wrap, .balloon-wrap-front, .balloon-wrap-back {
+  padding: 0.75em;
+  height: 10em;
+}
+
+/* line 185, ../sass/site.scss */
+.balloon-wrap-front {
+  background: no-repeat center 80%;
+  background-size: 45%;
+}
+@media (min-width: 400px) {
+  /* line 185, ../sass/site.scss */
+  .balloon-wrap-front {
+    background-size: 55%;
+  }
+}
+@media (min-width: 680px) {
+  /* line 185, ../sass/site.scss */
+  .balloon-wrap-front {
+    background-size: 65%;
+  }
+}
+@media (min-width: 1070px) {
+  /* line 185, ../sass/site.scss */
+  .balloon-wrap-front {
+    background-size: 75%;
+  }
+}
+
+/* line 204, ../sass/site.scss */
+.balloon-year {
+  font-weight: 400;
+  font-size: 1.125em;
+}
+@media (min-width: 680px) {
+  /* line 204, ../sass/site.scss */
+  .balloon-year {
+    font-size: 1.25em;
+  }
+}
+
+/* line 212, ../sass/site.scss */
+.balloon-icon {
+  position: absolute;
+  top: 15px;
+  right: 12px;
+}
+
+/* line 216, ../sass/site.scss */
+.balloon-name, .game-difficulty {
+  margin: 160px 0 0 0;
+  padding: 0.625em;
+  width: 100%;
+  background: #222222;
+  color: white;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: .5px;
+  font-weight: 400;
+  font-size: 1.125em;
+  -webkit-font-smoothing: antialiased;
+}
+@media (min-width: 680px) {
+  /* line 216, ../sass/site.scss */
+  .balloon-name, .game-difficulty {
+    margin-top: 8em;
+    font-size: 1.25em;
+  }
+}
+
+/* line 234, ../sass/site.scss */
+.macys-lead-in {
+  display: block;
+  margin-bottom: 2px;
+  text-transform: uppercase;
+  letter-spacing: 0.75px;
+  font-weight: 500;
+  font-size: 0.875em;
+  font-family: "FCKaiserCond", Helvetica, Arial, sans-serif;
+}
+
+/* line 244, ../sass/site.scss */
+.balloon-back-copy {
+  margin-bottom: 6px;
+  font-weight: 400;
+  font-size: 0.75em;
+  font-family: "MuseoSans",Helvetica,Arial,sans-serif;
+}
+
+/* line 255, ../sass/site.scss */
+.balloon-mod {
+  cursor: pointer;
+  perspective: 1000;
+  -webkit-perspective: 1000;
+}
+
+/* line 261, ../sass/site.scss */
+.flipper {
+  -webkit-animation-name: rotateCard;
+  -ms-animation-name: rotateCard;
+  -webkit-animation-duration: 1s;
+  -ms-animation-duration: 1s;
+  -webkit-animation-timing-function: ease-in;
+  -ms-animation-timing-function: ease-in;
+  -webkit-animation-iteration-count: once;
+  -ms-animation-iteration-count: once;
+}
+
+/* lift the pane when hovered */
+/* line 276, ../sass/site.scss */
+.csstransforms3d .balloon-mod:hover .flipper, .csstransforms3d .balloon-mod.hover .flipper {
+  -webkit-transform: rotateY(30deg);
+  transform: rotateY(30deg);
+}
+
+/* line 285, ../sass/site.scss */
+.csstransforms3d .flip .flipper {
+  -webkit-transform: rotateY(180deg);
+  transform: rotateY(180deg);
+}
+/* line 289, ../sass/site.scss */
+.csstransforms3d .flip:hover .flipper {
+  -webkit-transform: rotateY(180deg);
+  transform: rotateY(180deg);
+}
+
+/* line 297, ../sass/site.scss */
+.balloon-wrap-front, .balloon-wrap-back {
+  width: 100%;
+}
+
+/* flip speed goes here */
+/* line 302, ../sass/site.scss */
+.flipper {
+  position: relative;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  transform-style: preserve-3d;
+  -webkit-transform-style: preserve-3d;
+}
+
+/* hide balloon-wrap-back of pane during swap */
+/* line 311, ../sass/site.scss */
+.balloon-wrap-front, .balloon-wrap-back {
+  position: absolute;
+  top: 0;
+  left: 0;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  /* Firefox */
+  -ms-backface-visibility: hidden;
+  /* Internet Explorer */
+}
+
+/* balloon-wrap-front pane, placed above balloon-wrap-back */
+/* line 320, ../sass/site.scss */
+.balloon-wrap-front {
+  z-index: 1;
+}
+
+/* balloon-wrap-back, initially hidden pane */
+/* line 326, ../sass/site.scss */
+.csstransforms3d .balloon-wrap-back {
+  -webkit-transform: rotateY(180deg);
+  transform: rotateY(180deg);
+}
+
+/* line 337, ../sass/site.scss */
+.no3d .flip .balloon-wrap-front {
+  z-index: 1;
+  display: none;
+}
+/* line 341, ../sass/site.scss */
+.no3d .flip .balloon-wrap-back {
+  z-index: 2;
+}
+
+/* line 349, ../sass/site.scss */
+.macys-footer {
+  margin: 1em 0 4em;
+  padding: 1.25em 0;
+  border-top: 1px solid #222222;
+}
+
+/* line 355, ../sass/site.scss */
+.footer-hed {
+  margin-bottom: 5px;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 1.75em;
+  -webkit-font-smoothing: antialiased;
+}
+
+@-moz-keyframes rotateCard {
+  /* line 367, ../sass/site.scss */
+  from {
+    -moz-transform: rotateY(0deg);
+  }
+
+  /* line 368, ../sass/site.scss */
+  to {
+    -moz-transform: rotateY(360deg);
+  }
+}
+
+@-webkit-keyframes rotateCard {
+  /* line 371, ../sass/site.scss */
+  from {
+    -webkit-transform: rotateY(0deg);
+  }
+
+  /* line 372, ../sass/site.scss */
+  to {
+    -webkit-transform: rotateY(360deg);
+  }
+}
+
+@keyframes rotateCard {
+  /* line 375, ../sass/site.scss */
+  from {
+    transform: rotateY(0deg);
+  }
+
+  /* line 376, ../sass/site.scss */
+  to {
+    transform: rotateY(360deg);
+  }
+}
+
+/* line 382, ../sass/site.scss */
+.fc-logo-loader {
+  z-index: 3;
+  display: block;
+  margin: 0 auto 20em;
+  -o-transition: rotate(3600deg);
+  -webkit-transform-origin: 50% 41%;
+  transform-origin: 50% 41%;
+  -webkit-animation-name: spin;
+  -moz-animation-name: spin;
+  -ms-animation-name: spin;
+  -webkit-animation-duration: 2000ms;
+  -moz-animation-duration: 2000ms;
+  -ms-animation-duration: 2000ms;
+  -webkit-animation-timing-function: linear;
+  -moz-animation-timing-function: linear;
+  -ms-animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+  -moz-animation-iteration-count: infinite;
+  -ms-animation-iteration-count: infinite;
+}
+
+@-moz-keyframes spin {
+  /* line 404, ../sass/site.scss */
+  from {
+    -moz-transform: rotate(0deg);
+  }
+
+  /* line 405, ../sass/site.scss */
+  to {
+    -moz-transform: rotate(360deg);
+  }
+}
+
+@-webkit-keyframes spin {
+  /* line 408, ../sass/site.scss */
+  from {
+    -webkit-transform: rotate(0deg);
+  }
+
+  /* line 409, ../sass/site.scss */
+  to {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  /* line 412, ../sass/site.scss */
+  from {
+    transform: rotate(0deg);
+  }
+
+  /* line 413, ../sass/site.scss */
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* line 419, ../sass/site.scss */
+.graphic-game-wrap {
+  position: relative;
+  z-index: 2;
+  margin-top: -1.5em;
+  margin-bottom: 2em;
+}
+
+/* line 426, ../sass/site.scss */
+.graphic-game {
+  display: -moz-inline-stack;
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  zoom: 1;
+  *display: inline;
+  margin: 0 auto;
+  padding: 0.625em;
+  background-color: #222222;
+  -webkit-box-shadow: 2px 2px 2px 0px rgba(34, 34, 34, 0.3);
+  -moz-box-shadow: 2px 2px 2px 0px rgba(34, 34, 34, 0.3);
+  box-shadow: 2px 2px 2px 0px rgba(34, 34, 34, 0.3);
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  font-weight: 400;
+  font-size: 1.25em;
+  -webkit-font-smoothing: antialiased;
+}
+@media (min-width: 680px) {
+  /* line 426, ../sass/site.scss */
+  .graphic-game {
+    margin: auto;
+  }
+}
+
+/* line 445, ../sass/site.scss */
+.graphic-game-start, .graphic-game-end, .game-difficulty, .game-name {
+  display: none;
+}
+
+/* line 449, ../sass/site.scss */
+.graphic-byline {
+  display: none;
+  float: right;
+  border: 1px solid #222222;
+  background-color: beige;
+  -webkit-box-shadow: 2px 2px 2px 0px rgba(34, 34, 34, 0);
+  -moz-box-shadow: 2px 2px 2px 0px rgba(34, 34, 34, 0);
+  box-shadow: 2px 2px 2px 0px rgba(34, 34, 34, 0);
+  color: #222222;
+  text-transform: none;
+  text-transform: uppercase;
+  font-weight: 300;
+  font-weight: 400;
+}
+@media (min-width: 680px) {
+  /* line 449, ../sass/site.scss */
+  .graphic-byline {
+    display: -moz-inline-stack;
+    display: inline-block;
+    vertical-align: middle;
+    *vertical-align: auto;
+    zoom: 1;
+    *display: inline;
+    position: absolute;
+    top: 0;
+    right: 10px;
+  }
+}
+@media (min-width: 1070px) {
+  /* line 449, ../sass/site.scss */
+  .graphic-byline {
+    right: 20px;
+  }
+}
+
+@media (min-width: 680px) {
+  /* line 471, ../sass/site.scss */
+  .graphic-byline-inline {
+    display: none;
+  }
+}
+
+/* line 477, ../sass/site.scss */
+.game-name {
+  position: absolute;
+  top: 3.8em;
+  right: 0;
+  left: 0;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  font-weight: 400;
+}
+
+/* line 487, ../sass/site.scss */
+body.is-playing .graphic-game-start, body.is-playing .balloon-name {
+  display: none;
+}
+/* line 490, ../sass/site.scss */
+body.is-playing .graphic-game-end, body.is-playing .game-name, body.is-playing .game-difficulty {
+  display: block;
+}
+@media (min-width: 680px) {
+  /* line 490, ../sass/site.scss */
+  body.is-playing .graphic-game-end, body.is-playing .game-name, body.is-playing .game-difficulty {
+    display: -moz-inline-stack;
+    display: inline-block;
+    vertical-align: middle;
+    *vertical-align: auto;
+    zoom: 1;
+    *display: inline;
+  }
+}
+/* line 496, ../sass/site.scss */
+body.is-playing .balloon-icon {
+  -webkit-transition: opacity 0.3s ease-in-out;
+  -moz-transition: opacity 0.3s ease-in-out;
+  -o-transition: opacity 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out;
+  opacity: 0;
+}
+/* line 500, ../sass/site.scss */
+body.is-playing .not-playing-wrap {
+  -webkit-transition: opacity 0.3s ease-in-out;
+  -moz-transition: opacity 0.3s ease-in-out;
+  -o-transition: opacity 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out;
+  opacity: 0;
+}
+/* line 506, ../sass/site.scss */
+body.not-playing .graphic-game-start, body.not-playing .balloon-name {
+  display: block;
+}
+@media (min-width: 680px) {
+  /* line 506, ../sass/site.scss */
+  body.not-playing .graphic-game-start, body.not-playing .balloon-name {
+    display: -moz-inline-stack;
+    display: inline-block;
+    vertical-align: middle;
+    *vertical-align: auto;
+    zoom: 1;
+    *display: inline;
+  }
+}
+/* line 512, ../sass/site.scss */
+body.not-playing .graphic-game-end, body.not-playing .game-name, body.not-playing .game-difficulty {
+  display: none;
+}
+/* line 515, ../sass/site.scss */
+body.not-playing .balloon-icon {
+  -webkit-transition: opacity 0.3s ease-in-out;
+  -moz-transition: opacity 0.3s ease-in-out;
+  -o-transition: opacity 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out;
+  opacity: 100;
+}
+/* line 519, ../sass/site.scss */
+body.not-playing .not-playing-wrap {
+  -webkit-transition: opacity 0.3s ease-in-out;
+  -moz-transition: opacity 0.3s ease-in-out;
+  -o-transition: opacity 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out;
+  opacity: 100;
+}
+
+/* line 530, ../sass/site.scss */
+#chart {
+  margin-bottom: 0.625em;
+}
+
+/* line 534, ../sass/site.scss */
+.body-copy {
+  margin-bottom: 1.25em;
+  line-height: 150%;
+}
+
+/* line 539, ../sass/site.scss */
+.graphic-dek {
+  font-size: 1.25em;
+}
+
+/* line 543, ../sass/site.scss */
+.graphic-copy {
+  margin-bottom: 0.625em;
+  font-size: 0.875em;
+  line-height: 140%;
+}
+
+/* line 549, ../sass/site.scss */
+.graphic-container {
+  padding: 10px;
+  background-color: floralwhite;
+}
+
+/* line 554, ../sass/site.scss */
+.bar rect {
+  stroke: #fff;
+  shape-rendering: crispEdges;
+}
+
+/* line 559, ../sass/site.scss */
+.bar rect.background {
+  fill: #eee;
+}
+
+/* line 563, ../sass/site.scss */
+.value-labels {
+  fill: #999999;
+}
+
+/* line 567, ../sass/site.scss */
+.bar rect.audience {
+  fill: #b681ff;
+}
+
+/* line 571, ../sass/site.scss */
+.bar text {
+  font-size: 0.6875em;
+}
+@media (min-width: 400px) {
+  /* line 571, ../sass/site.scss */
+  .bar text {
+    font-size: 0.75em;
+  }
+}
+
+/* line 578, ../sass/site.scss */
+.axis line {
+  stroke: #ccc;
+  stroke-width: 1;
+}
+
+/* line 583, ../sass/site.scss */
+line.median {
+  stroke: #777;
+  stroke-width: 1;
+}
+
+/* line 588, ../sass/site.scss */
+.tick text {
+  font-size: 0.6875em;
+  fill: #999999;
+}
+@media (min-width: 400px) {
+  /* line 588, ../sass/site.scss */
+  .tick text {
+    font-size: 0.75em;
+  }
+}
+
+/* line 596, ../sass/site.scss */
+.domain {
+  fill: none;
+  stroke: #999999;
+  stroke-width: 1;
+}
+
+/* line 602, ../sass/site.scss */
+.event-year {
+  fill: #999999;
+}
+
+/* line 606, ../sass/site.scss */
+.sources-copy {
+  margin-bottom: 5px;
+  padding-top: 10px;
+  border-top: 1px solid #999999;
+  color: #999999;
+  text-align: left;
+  font-size: 11px;
+}

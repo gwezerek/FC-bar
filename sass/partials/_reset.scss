@@ -1,0 +1,25 @@
+// ============================================= 
+
+//  Category of five items             
+
+// ============================================= 
+
+button {
+	background: none;
+	border: none;
+	padding: 0;
+	color: $accent;
+	outline: none;
+}
+
+a {
+  color: $accent;
+  text-decoration: none;
+}
+
+::selection {
+	background-color: $accent-50;
+}
+::-moz-selection {
+	background-color: $accent-50;
+}

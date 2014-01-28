@@ -1,0 +1,104 @@
+// QUIZ STYLES
+
+.question-mod {
+	border-bottom: 1px solid $light-gray;
+	&:last-child {
+		border-bottom: 0px;
+	}
+}
+
+.macys-graphic {
+	margin-bottom: em(30);
+}
+
+.question {
+	margin-bottom: em(5);
+	font-family: "MuseoSans",Helvetica,Arial,sans-serif;
+	font-size: em(16);
+}
+
+.question-number {
+	display: none;
+}
+
+.question-text {
+	@include inline-block;
+	margin: em(50) em(15) em(50) 0;
+	width: 260px;
+}
+
+.option-wrap {
+	margin-bottom: em(5);
+	margin-left: em(30);
+	list-style-type: circle;
+}
+
+.option {
+	@include trans(0.3s, color, ease-in-out);
+	@include inline-block;
+	color: $med-gray;
+	cursor: pointer;
+	&:hover {
+		color: $txt-black;
+	}
+}
+
+.option-on {
+	list-style-type: disc;
+	font-weight: 500;
+	.option {
+		color: $txt-black;
+		&:hover {
+			color: $txt-black;
+		}
+	}
+}
+
+.answered:hover {
+	color: $med-gray;
+}
+
+.results {
+	display: none;
+}
+
+.results-on {
+	display: block;
+}
+
+svg {
+	@include trans(0.3s, width, ease-in-out);
+	@include trans(0.3s, height, ease-in-out);
+}
+
+.chart-off {
+	width: 0;
+	height: 0;
+}
+
+.chart-on {
+	width: auto;
+	height: auto;
+}
+
+.pie {
+	@include inline-block;
+}
+
+.pie-label, .mid-copy {
+	font-weight: 300;
+	font-size: em(10);
+	font-family: "MuseoSans",Helvetica,Arial,sans-serif;
+	fill: $med-gray;
+}
+
+.mid-percent {
+	letter-spacing: 0.75px;
+	font-weight: 500;
+	font-size: em(30);
+	font-family: "FCKaiserCond", Helvetica, Arial, sans-serif;
+}
+
+.mid-copy {
+	fill: $med-gray;
+}

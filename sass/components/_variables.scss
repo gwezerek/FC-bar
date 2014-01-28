@@ -1,0 +1,94 @@
+/* !============================================= */
+
+/* ! Variables						  			  */ 
+
+/* !============================================= */
+
+/* !-- Universal ------------------------------------ */
+
+$black-5: #f5f5f5;
+$black-10: #ededed;
+$black-15: #ccc;
+$black-50: #999;
+$black-75: #666; 
+$black-90: #222; 
+$black-95: #111; 
+
+$light-gray: $black-10;
+$med-gray: $black-50;
+$dark-gray: $black-75;
+$tease-txt: $black-75;
+$txt-black: $black-90;
+$text-black: $txt-black;
+
+$blue: #1d78af;
+
+$selection-color: $blue;
+$selection-color-type: #FFF;
+
+$link: $blue;
+$link-hover: darken($link, 8%);
+
+$sans:Arial,Helvetica,Verdana,sans-serif;
+$serif:Georgia,Times,Times New Roman,serif;
+$mono:"Courier New",Courier,mono;
+
+
+/* !-- Project ------------------------------------ */
+
+$small: 400px;
+$smedium: 680px;
+$medium: 870px;
+$large: 1070px;
+$xlarge: 1280px;
+$xxlarge: 1480px;
+// $xxxlarge: 1700px;
+// $xxxxlarge: 1880px;
+
+// $bground-1: #F2CE61;
+// $bground-2: #F29E62;
+// $bground-3: #F26D61;
+// $bground-4: #F26286;
+// $bground-5: #F262B7;
+// $bground-6: #F262E7;
+// $bground-7: #CE62F2;
+// $bground-8: #9F62F2;
+// $bground-9: #7569F2;
+// $bground-10: #6286F2;
+
+
+$bground-1: #FFDF80;
+$bground-2: #FFB581;
+$bground-3: #FF8A80;
+$bground-4: #FF81A0;
+$bground-5: #FF81CB;
+$bground-6: #FF81F5;
+$bground-7: #DF81FF;
+$bground-8: #B681FF;
+$bground-9: #9288FF;
+$bground-10: #81A0FF;
+
+$accent: rgb(34, 34, 34);;
+$bground: beige;
+
+$accent-40: tint($accent,40%);
+$accent-50: tint($accent, 50%);
+$bground-90: shade($bground, 30%);
+
+
+// Mixin that uses variables
+// =============================================
+
+// @mixin text-link {
+// 	@include trans(0.2s, color, ease-in-out);
+// 	color: $accent-40;
+// 	&:hover {
+// 		color: $accent;
+// 	}
+// }
+
+
+/* !-- Paths ------------------------------------ */
+
+$rgba-bg-path: "rgba-bg/";
+$svg-path: "icons/";
