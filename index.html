@@ -16,8 +16,6 @@
 
     <script src="http://d3js.org/d3.v3.min.js"></script>
     <script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
-    <script type="text/javascript" src="bower_components/tabletop/src/tabletop.js"></script>
-    <script type="text/javascript" src="bower_components/underscore/underscore-min.js"></script>
     <script src="bower_components/jquery/jquery.js"></script>
 
 </head>
@@ -37,11 +35,11 @@
         <div class="quiz-mod">
         	<div class="graphic-container">
 	            <div id="chart">
-	                <h2 class="graphic-dek">Average Telecast Audience (in millions)</h2>
-	                <p class="graphic-copy">Measuring a program's popularity tricky business. No organization collects data from every country, so we have to rely on estimated figures from countries like China, or organizations like FIFA. Older figures for TV events such as the moon landing or "Elvis: Aloha From Hawaii," the first-ever global satellite broadcast, are difficult to verify and compare. The list below includes some of the larger, independently reported programs in TV history, along with a few smaller broadcasts for perspective.</p>
+	                <h2 class="graphic-dek">Total Audience Reach (in millions)</h2>
+	                <p class="graphic-copy">Measuring a program's popularity is tricky business. No organization collects data from every country, so we have to rely on estimated figures from countries such as China, or organizations such as FIFA. Older figures for TV events such as the moon landing or "Elvis: Aloha From Hawaii," the first-ever global satellite broadcast, are difficult to verify and compare. The list below includes some of the larger, independently reported programs in TV history, along with a few smaller broadcasts for perspective. When audience reports conflicted, the more conservative figures were used. The 2012 Super Bowl still stands as the most watched television event in American history, blah blah world history. "Average rating is acknowledged as the most credible audited audience figure, and counts TV viewers who watch for at least 30 minutes. Definitive worldwide figures take several months to finalize." There is no independent accounting of how many people tuned in to watch Princess Diana's funeral.</p>
 
 	            </div>
-	            <p class="sources-copy">Click on any bar to visit the source for that datum.</p>
+	            <p class="sources-copy">No organization collects audience data from every country, so we have to rely on estimated figures from countries such as China, or organizations like FIFA or the UEFA. Totals from some events, such as Princess Diana’s funeral or "Elvis: Aloha From Hawaii," the first-ever global satellite broadcast, are difficult to verify and have been omitted. Due to the piecemeal nature of the data, we’ve tried to be as transparent as possible: Click on any bar to visit the source for that datum.</p>
             </div>
         </div>
 
@@ -51,7 +49,7 @@
             url = "telecasts.csv",
             margin = {
                 top: 30,
-                right: 10,
+                right: 20,
                 bottom: 20,
                 left: 5
             },
@@ -66,7 +64,7 @@
 
          // Scales and axes
         var x = d3.scale.linear()
-            .domain([0, 700]) // Hard-coding this because we know the data
+            .domain([0, 1000]) // Hard-coding this because we know the data
         .range([0, width]);
 
         var y = d3.scale.ordinal();
@@ -91,7 +89,7 @@
         d3.csv(url, coerce, function(data) {
 
             // Sort
-            data = _.sortBy(data, 'audience').reverse();
+            data = data.sort(function(a,b) {return b.audience-a.audience;});
 
             // Set y domain
             y.domain(d3.range(data.length))
@@ -130,12 +128,13 @@
             	.attr("target", "_top");
 
             // Actual bars
-            links.append('rect')
+            var bars = links.append('rect')
                 .attr('class', 'audience')
                 .attr('height', y.rangeBand())
                 .attr('width', function(d) {
                     return x(d.audience);
-                })
+                });
+
 
             // Telecast labels
             var events = links.append('text')
@@ -143,25 +142,33 @@
                     return d.telecast;
                 })
                 .attr('class', 'name')
-                .attr('y', y.rangeBand() - 35);
+                .attr('y', y.rangeBand() - 35)
+                .style("font-weight","500");
 
             events.append('tspan')
             	.text(function(d) {
                     return " (" + d.year + ")";
                 })
                 .attr('class', 'event-year')
+                .style("font-weight","300");
 
             // Value labels
             labels = links.append("text")
                 .attr("x", function(d) {
-                    return x(d.audience) + 3;
+                    return x(d.audience) - 5;
                 })
+                .attr("text-anchor", "end")
+                .attr("class", "value")
                 .attr("y", barHeight / 4) // Magic number, replace in future
             .attr("dy", ".35em")
                 .attr("class", "value-labels")
                 .text(function(d) {
                     return d.audience;
                 });
+
+            // Our hacky method to give the first bar a unit
+            var firstValue = d3.select(labels[0][0])
+            	.text("984 mil.");
 
         });
 
@@ -198,7 +205,7 @@
 
             // Update value position
             labels.attr("x", function(d) {
-                return x(d.audience) + 3;
+                return x(d.audience) - 5;
             })
 
             // Update axes

@@ -1834,62 +1834,66 @@ body.not-playing .not-playing-wrap {
 
 /* line 563, ../sass/site.scss */
 .value-labels {
-  fill: #999999;
+  fill: floralwhite;
 }
 
-/* line 567, ../sass/site.scss */
-.bar rect.audience {
+/* line 568, ../sass/site.scss */
+.bar .audience {
   fill: #b681ff;
 }
-
 /* line 571, ../sass/site.scss */
+.bar:nth-of-type(9) .audience {
+  fill: #ffb581;
+}
+
+/* line 576, ../sass/site.scss */
 .bar text {
   font-size: 0.6875em;
 }
 @media (min-width: 400px) {
-  /* line 571, ../sass/site.scss */
+  /* line 576, ../sass/site.scss */
   .bar text {
     font-size: 0.75em;
   }
 }
 
-/* line 578, ../sass/site.scss */
+/* line 583, ../sass/site.scss */
 .axis line {
   stroke: #ccc;
   stroke-width: 1;
 }
 
-/* line 583, ../sass/site.scss */
+/* line 588, ../sass/site.scss */
 line.median {
   stroke: #777;
   stroke-width: 1;
 }
 
-/* line 588, ../sass/site.scss */
+/* line 593, ../sass/site.scss */
 .tick text {
   font-size: 0.6875em;
   fill: #999999;
 }
 @media (min-width: 400px) {
-  /* line 588, ../sass/site.scss */
+  /* line 593, ../sass/site.scss */
   .tick text {
     font-size: 0.75em;
   }
 }
 
-/* line 596, ../sass/site.scss */
+/* line 601, ../sass/site.scss */
 .domain {
   fill: none;
   stroke: #999999;
   stroke-width: 1;
 }
 
-/* line 602, ../sass/site.scss */
+/* line 607, ../sass/site.scss */
 .event-year {
   fill: #999999;
 }
 
-/* line 606, ../sass/site.scss */
+/* line 611, ../sass/site.scss */
 .sources-copy {
   margin-bottom: 5px;
   padding-top: 10px;

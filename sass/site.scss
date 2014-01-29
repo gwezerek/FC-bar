@@ -561,13 +561,18 @@ body {
 }
 
 .value-labels {
-	fill: $med-gray;
+	fill: floralwhite;
 }
  
-.bar rect.audience {
-    fill: $bground-8;
+.bar {
+	.audience {
+	    fill: $bground-8;
+	}
+	&:nth-of-type(9) .audience {
+		fill: $bground-2;
+	}
 }
- 
+
 .bar text {
     font-size: em(11);
     @media (min-width: $small) {
