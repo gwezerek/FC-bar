@@ -24,9 +24,6 @@
     <article class="macys-graphic">
         <div class="header-wrap">
             <header class="graphic-header">
-                <!-- 				<div class="mobile-logo">
-					<img src="img/fastcompany-dark-txt.svg" alt="FC logo" class="fc-logo-mobile">
-				</div> -->
                 <h1 class="graphic-title">Most-Watched Telecasts</h1>
             </header>
         </div>
@@ -35,11 +32,11 @@
         <div class="quiz-mod">
         	<div class="graphic-container">
 	            <div id="chart">
-	                <h2 class="graphic-dek">Total Audience Reach (in millions)</h2>
-	                <p class="graphic-copy">Measuring a program's popularity is tricky business. No organization collects data from every country, so we have to rely on estimated figures from countries such as China, or organizations such as FIFA. Older figures for TV events such as the moon landing or "Elvis: Aloha From Hawaii," the first-ever global satellite broadcast, are difficult to verify and compare. The list below includes some of the larger, independently reported programs in TV history, along with a few smaller broadcasts for perspective. When audience reports conflicted, the more conservative figures were used. The 2012 Super Bowl still stands as the most watched television event in American history, blah blah world history. "Average rating is acknowledged as the most credible audited audience figure, and counts TV viewers who watch for at least 30 minutes. Definitive worldwide figures take several months to finalize." There is no independent accounting of how many people tuned in to watch Princess Diana's funeral.</p>
+	                <h2 class="graphic-dek">Audience Reach (in&nbsp;millions)</h2>
+	                <p class="graphic-copy">In the absence of a “Most Watched TV Shows of All Time” database, we scoured the web for candidates, at all times trying our best to compare apples to apples. Below are nine of our finds, which include a few smaller telecasts like the Super Bowl for perspective's&nbsp;sake.</p>
 
 	            </div>
-	            <p class="sources-copy">No organization collects audience data from every country, so we have to rely on estimated figures from countries such as China, or organizations like FIFA or the UEFA. Totals from some events, such as Princess Diana’s funeral or "Elvis: Aloha From Hawaii," the first-ever global satellite broadcast, are difficult to verify and have been omitted. Due to the piecemeal nature of the data, we’ve tried to be as transparent as possible: Click on any bar to visit the source for that datum.</p>
+	            <p class="sources-copy">Because no organization collects audience data from every country, we relied on a few estimated figures from countries such as China, or organizations like FIFA or the UEFA. Periodical&nbsp;events are represented by their most popular broadcast. Due to the piecemeal nature of the data, we’ve tried to be as transparent as possible: Click on any bar to visit the source for that&nbsp;datum.</p>
             </div>
         </div>
 
@@ -70,7 +67,8 @@
         var y = d3.scale.ordinal();
 
         var xAxis = d3.svg.axis()
-            .scale(x);
+            .scale(x)
+            .ticks(6);
 
 
 
@@ -172,7 +170,7 @@
 
         });
 
-         // resize
+        // Resize
         d3.select(window).on('resize', resize);
 
 

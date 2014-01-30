@@ -8,15 +8,12 @@
 //  Import components              
 // ============================================= 
 @import "components/base"; 
-@import "partials/zen";// Import Zen Grids with this statement.
 
 
 //  Import partials              
 // =============================================
 @import "partials/reset";
-@import "partials/layout";
 @import "partials/type";
-@import "partials/quiz";
 
 
 
@@ -25,15 +22,13 @@
 
 body {
 	margin: 0 auto;
+	padding-top: em(20);
 	max-width: 623px;
 	height: 100%;
-	// background: $bground;
-	padding-top: em(20);
 	@media (min-width: $small) {
 		padding: em(20);
 	}
 	@media (min-width: $smedium) {
-		// margin: 0 50px 0 60px;
 		padding-top: em(40);
 	}
 	@media (min-width: $large) {
@@ -49,14 +44,8 @@ article {
 	border-right: 1px solid $light-gray;
 	border-left: 1px solid $light-gray;
 	background: white;
-	// @media (min-width: $small) {
-	// 	margin: 0 20px 0 20px;
-	// }
 	@media (min-width: $smedium) {
 		padding: 0 em(20);
-	}
-	@media (min-width: $large) {
-		// padding-top: em(60);
 	}
 }
 
@@ -68,14 +57,8 @@ article {
 	}
 }
 
-.mobile-logo {
-	@media (min-width: $smedium) {
-		display: none;
-	}
-}
-
 .graphic-title {
-	margin-bottom: 30px;
+	margin-bottom: 20px;
 	font-size: em(48);
 	line-height: 100%;
 	@media (min-width: $smedium) {
@@ -92,436 +75,14 @@ article {
 	}
 }
 
-
-.fc-logo {
-	position: absolute;
-	display: none;
-	width: 60px;
-	@media (min-width: $smedium) {
-		display: block;
-	}
-}
-
-.inset-wrap {
-	@media (min-width: $smedium) {
-		// margin-left: 75px;
-	}
-}
-
 .graphic-dek {
 	margin-bottom: em(5);
+	font-weight: 600;
 	font-size: em(16);
 	font-family: "MuseoSans",Helvetica,Arial,sans-serif;
-	line-height: 130%;
+	line-height: 120%;
 }
 
-.graphic-intro {
-	font-weight: 300;
-	font-size: em(15);
-	font-family: "MuseoSans",Helvetica,Arial,sans-serif;
-	line-height: 23px;
-}
-
-.balloon-mod {
-	position: relative;
-	background-size: 80%;
-	&:nth-child(n+0):nth-child(-n+2) {
-		.balloon-wrap-front, .balloon-wrap-back, .flipper {
-			background-color: $bground-1;
-		}
-	}
-	&:nth-child(n+3):nth-child(-n+16) {
-		.balloon-wrap-front, .balloon-wrap-back, .flipper {
-			background-color: $bground-2;
-		}
-	}
-	&:nth-child(n+17):nth-child(-n+18) {
-		.balloon-wrap-front, .balloon-wrap-back, .flipper {
-			background-color: $bground-3;
-		}
-	}
-	&:nth-child(n+19):nth-child(-n+20) {
-		.balloon-wrap-front, .balloon-wrap-back, .flipper {
-			background-color: $bground-4;
-		}
-	}
-	&:nth-child(n+21):nth-child(-n+27) {
-		.balloon-wrap-front, .balloon-wrap-back, .flipper {
-			background-color: $bground-5;
-		}
-	}
-	&:nth-child(n+28):nth-child(-n+29) {
-		.balloon-wrap-front, .balloon-wrap-back, .flipper {
-			background-color: $bground-6;
-		}
-	}
-	&:nth-child(n+30):nth-child(-n+44) {
-		.balloon-wrap-front, .balloon-wrap-back, .flipper {
-			background-color: $bground-7;
-		}
-	}
-	&:nth-child(n+45):nth-child(-n+64) {
-		.balloon-wrap-front, .balloon-wrap-back, .flipper {
-			background-color: $bground-8;
-		}
-	}
-	&:nth-child(n+65):nth-child(-n+88) {
-		.balloon-wrap-front, .balloon-wrap-back, .flipper {
-			background-color: $bground-9;
-		}
-	}
-	&:nth-child(n+89):nth-child(-n+95) {
-		.balloon-wrap-front, .balloon-wrap-back, .flipper {
-			background-color: $bground-10;
-		}
-	}
-}
-
-.balloon-wrap {
-	padding: em(12);
-	height: 10em;
-}
-
-.balloon-wrap-front {
-	@extend .balloon-wrap;
-	background: no-repeat center 80%;
-	background-size: 45%;
-	@media (min-width: $small) {
-		background-size: 55%;
-	}
-	@media (min-width: $smedium) {
-		background-size: 65%;
-	}
-	@media (min-width: $large) {
-		background-size: 75%;
-	}
-}
-
-.balloon-wrap-back {
-	@extend .balloon-wrap;
-}
-
-.balloon-year {
-	font-weight: 400;
-	font-size: em(18);
-	@media (min-width: $smedium) {
-		font-size: em(20);
-	}
-}
-
-.balloon-icon {
-	@include absolute(15px 12px n n);
-}
-
-.balloon-name, .game-difficulty {
-	margin: 160px 0 0 0;
-	padding: em(10);
-	width: 100%;
-	background: $accent;
-	color: rgb(255, 255, 255);
-	text-align: center;
-	text-transform: uppercase;
-	letter-spacing: .5px;
-	font-weight: 400;
-	font-size: em(18);
-	-webkit-font-smoothing: antialiased;
-	@media (min-width: $smedium) {
-		margin-top: 8em;
-		font-size: em(20);
-	}
-}
-
-.macys-lead-in {
-	display: block;
-	margin-bottom: 2px;
-	text-transform: uppercase;
-	letter-spacing: 0.75px;
-	font-weight: 500;
-	font-size: em(14);
-	font-family: "FCKaiserCond", Helvetica, Arial, sans-serif;
-}
-
-.balloon-back-copy {
-	margin-bottom: 6px;
-	font-weight: 400;
-	font-size: em(12);
-	font-family: "MuseoSans",Helvetica,Arial,sans-serif;
-}
-
-
-
-// FLIP
-
-.balloon-mod {
-	cursor: pointer;
-	perspective: 1000;
-	-webkit-perspective: 1000;
-}
-
-.flipper {
-
-    -webkit-animation-name: rotateCard;
-
-    -ms-animation-name: rotateCard;
-    -webkit-animation-duration: 1s;
-    -ms-animation-duration: 1s;
-    -webkit-animation-timing-function: ease-in;
-    -ms-animation-timing-function: ease-in;
-    -webkit-animation-iteration-count: once;
-    -ms-animation-iteration-count: once;
-}
-
-/* lift the pane when hovered */
-.csstransforms3d {
-	.balloon-mod:hover .flipper, .balloon-mod.hover .flipper {
-		-webkit-transform: rotateY(30deg);
-		transform: rotateY(30deg);
-	}
-}
-
-.csstransforms3d {
-
-	.flip {
-		.flipper {
-			-webkit-transform: rotateY(180deg);
-			transform: rotateY(180deg);
-		}
-		&:hover .flipper {
-			-webkit-transform: rotateY(180deg);
-			transform: rotateY(180deg);
-		}
-	}
-
-}
-
-.balloon-wrap-front, .balloon-wrap-back {
-	width: 100%;
-}
-
-/* flip speed goes here */
-.flipper {
-	position: relative;
-	-webkit-transition: 0.3s;
-	transition: 0.3s;
-	transform-style: preserve-3d;
-	-webkit-transform-style: preserve-3d;
-}
-
-/* hide balloon-wrap-back of pane during swap */
-.balloon-wrap-front, .balloon-wrap-back {
-	@include absolute(0 n n 0);
-	-webkit-backface-visibility: hidden;
-	backface-visibility: hidden;
-	-moz-backface-visibility:hidden; /* Firefox */
-	-ms-backface-visibility:hidden; /* Internet Explorer */
-}
-
-/* balloon-wrap-front pane, placed above balloon-wrap-back */
-.balloon-wrap-front {
-	z-index: 1;
-}
-
-/* balloon-wrap-back, initially hidden pane */
-.csstransforms3d {
-	.balloon-wrap-back {
-		-webkit-transform: rotateY(180deg);
-		transform: rotateY(180deg);
-	}
-}
-
-
-// NO-3D
-
-.no3d {
-	.flip {
-		.balloon-wrap-front {
-			z-index: 1;
-			display: none;
-		}
-		.balloon-wrap-back {
-			z-index: 2;
-		}
-	}
-}
-
-
-// FOOTER
-.macys-footer {
-	margin: 1em 0 4em;
-	padding: em(20) 0;
-	border-top: 1px solid $accent;
-}
-
-.footer-hed {
-	margin-bottom: 5px;
-	text-transform: uppercase;
-	font-weight: 400;
-	font-size: em(28);
-	-webkit-font-smoothing: antialiased;
-}
-
-
-// CARDS SPIN
-
-@-moz-keyframes rotateCard {
-    from { -moz-transform: rotateY(0deg); }
-    to { -moz-transform: rotateY(360deg); }
-}
-@-webkit-keyframes rotateCard {
-    from { -webkit-transform: rotateY(0deg); }
-    to { -webkit-transform: rotateY(360deg); }
-}
-@keyframes rotateCard {
-    from {transform:rotateY(0deg);}
-    to {transform:rotateY(360deg);}
-}
-
-
-// LOADER SPIN
-
-.fc-logo-loader {
-	z-index: 3;
-	display: block;
-    margin: 0 auto 20em;
-    -o-transition: rotate(3600deg);
-    -webkit-transform-origin: 50% 41%;
-    transform-origin: 50% 41%;
-    -webkit-animation-name: spin;
-    -moz-animation-name: spin;
-    -ms-animation-name: spin;
-    -webkit-animation-duration: 2000ms;
-    -moz-animation-duration: 2000ms;
-    -ms-animation-duration: 2000ms;
-    -webkit-animation-timing-function: linear;
-    -moz-animation-timing-function: linear;
-    -ms-animation-timing-function: linear;
-    -webkit-animation-iteration-count: infinite;
-    -moz-animation-iteration-count: infinite;
-    -ms-animation-iteration-count: infinite;
-}
-
-@-moz-keyframes spin {
-    from { -moz-transform: rotate(0deg); }
-    to { -moz-transform: rotate(360deg); }
-}
-@-webkit-keyframes spin {
-    from { -webkit-transform: rotate(0deg); }
-    to { -webkit-transform: rotate(360deg); }
-}
-@keyframes spin {
-    from {transform:rotate(0deg);}
-    to {transform:rotate(360deg);}
-}
-
-
-// GAME
-
-.graphic-game-wrap {
-	position: relative;
-	z-index: 2;
-	margin-top: -1.5em;
-	margin-bottom: 2em;
-}
-
-.graphic-game {
-	@include inline-block;
-	margin: 0 auto;
-	padding: 0.625em;
-	background-color: $accent;
-	-webkit-box-shadow: 2px 2px 2px 0px rgba(34,34,34,0.3);
-	-moz-box-shadow:    2px 2px 2px 0px rgba(34,34,34,0.3);
-	box-shadow:         2px 2px 2px 0px rgba(34,34,34,0.3);
-	color: white;
-	text-transform: uppercase;
-	letter-spacing: 0.5px;
-	font-weight: 400;
-	font-size: em(20);
-	-webkit-font-smoothing: antialiased;
-	@media (min-width: $smedium) {
-		margin: auto;
-	}
-}
-
-.graphic-game-start, .graphic-game-end, .game-difficulty, .game-name {
-	display: none;
-}
-
-.graphic-byline {
-	display: none;
-	float: right;
-	border: 1px solid $accent;
-	background-color: beige;
-	-webkit-box-shadow: 2px 2px 2px 0px rgba(34,34,34,0);
-	-moz-box-shadow:    2px 2px 2px 0px rgba(34,34,34,0);
-	box-shadow:         2px 2px 2px 0px rgba(34,34,34,0);
-	color: $accent;
-	text-transform: none;
-	text-transform: uppercase;
-	font-weight: 300;
-	font-weight: 400;
-	@media (min-width: $smedium) {
-		@include inline-block;
-		@include absolute(0 10px n n);
-	}
-	@media (min-width: $large) {
-		right: 20px;
-	}
-}
-
-.graphic-byline-inline {
-	@media (min-width: $smedium) {
-		display: none;
-	}
-}
-
-.game-name {
-	@include absolute(3.8em 0 n 0);
-	text-align: center;
-	text-transform: uppercase;
-	letter-spacing: 0.5px;
-	font-weight: 400;
-}
-
-body {
-	&.is-playing {
-		.graphic-game-start, .balloon-name {
-			display: none;
-		}
-		.graphic-game-end, .game-name, .game-difficulty {
-			display: block;
-			@media (min-width: $smedium) {
-				@include inline-block;
-			}
-		}
-		.balloon-icon {
-			@include trans(0.3s, opacity, ease-in-out);
-			opacity: 0;
-		}
-		.not-playing-wrap {
-			@include trans(0.3s, opacity, ease-in-out);
-			opacity: 0;
-		}
-	}
-	&.not-playing {
-		.graphic-game-start, .balloon-name {
-			display: block;
-			@media (min-width: $smedium) {
-				@include inline-block;
-			}
-		}
-		.graphic-game-end, .game-name, .game-difficulty {
-			display: none;
-		}
-		.balloon-icon {
-			@include trans(0.3s, opacity, ease-in-out);
-			opacity: 100;
-		}
-		.not-playing-wrap {
-			@include trans(0.3s, opacity, ease-in-out);
-			opacity: 100;
-		}
-	}	
-}
 
 
 
@@ -559,10 +120,6 @@ body {
 .bar rect.background {
     fill: #eee;
 }
-
-.value-labels {
-	fill: floralwhite;
-}
  
 .bar {
 	.audience {
@@ -573,9 +130,17 @@ body {
 	}
 }
 
-.bar text {
+.name {
     font-size: em(11);
     @media (min-width: $small) {
+		font-size: em(12);
+	}
+}
+
+.value-labels {
+	font-size: em(11);
+	fill: floralwhite;
+    @media (min-width: $smedium) {
 		font-size: em(12);
 	}
 }
@@ -614,7 +179,11 @@ line.median {
 	border-top: 1px solid $med-gray;
 	color: $med-gray;
 	text-align: left;
-	font-size: 11px;
+	font-size: em(11);
+	fill: $med-gray;
+	@media (min-width: $small) {
+		font-size: em(12);
+	}
 }
 
 
