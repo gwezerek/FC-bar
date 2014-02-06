@@ -7,12 +7,14 @@
 
 //  Import components              
 // ============================================= 
-@import "components/base"; 
+@import "components/mixins"; 
+@import "compass/css3/inline-block";
+@import "components/variables"; 
 
 
 //  Import partials              
 // =============================================
-@import "partials/reset";
+// @import "partials/reset";
 @import "partials/type";
 
 
@@ -20,38 +22,22 @@
 //  Base styles            
 // =============================================
 
-body {
+.graphic-article {
 	margin: 0 auto;
-	padding-top: em(20);
+	// padding: 0 20px;
 	max-width: 623px;
 	height: 100%;
-	@media (min-width: $small) {
-		padding: em(20);
-	}
-	@media (min-width: $smedium) {
-		padding-top: em(40);
-	}
-	@media (min-width: $large) {
-		padding-top: em(60);
-	}
-}
-
-article {
-	margin: 0 auto;
-	padding: 0 em(20);
-	max-width: 623px;
-	height: 100%;
-	border-right: 1px solid $light-gray;
-	border-left: 1px solid $light-gray;
+	// border-right: 1px solid $light-gray;
+	// border-left: 1px solid $light-gray;
 	background: white;
 	@media (min-width: $smedium) {
-		padding: 0 em(20);
+		// padding: 0 20px;
 	}
 }
 
 .graphic-header {
 	position: relative;
-	margin-bottom: em(10);
+	margin-bottom: 10px;
 	@media (min-width: $large) {
 		// margin-bottom: em(40);
 	}
@@ -59,10 +45,10 @@ article {
 
 .graphic-title {
 	margin-bottom: 20px;
-	font-size: em(48);
+	font-size: 48px;
 	line-height: 100%;
 	@media (min-width: $smedium) {
-		font-size: em(60);
+		font-size: 60px;
 	}
 	@media (min-width: $large) {
 		// font-size: em(78);
@@ -76,11 +62,12 @@ article {
 }
 
 .graphic-dek {
-	margin-bottom: em(5);
+	margin-bottom: 5px;
 	font-weight: 600;
-	font-size: em(16);
+	font-size: 16px;
 	font-family: "MuseoSans",Helvetica,Arial,sans-serif;
 	line-height: 120%;
+	display: block;
 }
 
 
@@ -89,21 +76,22 @@ article {
 // BAR CHART
 
 #chart {
-	margin-bottom: em(10);
+	margin-bottom: 10px;
 }
 
 .body-copy {
-	margin-bottom: em(20);
+	margin-bottom: 20px;
 	line-height: 150%;
+	display: block;
 }
 
 .graphic-dek {
-	font-size: em(20);
+	font-size: 20px;
 }
 
 .graphic-copy {
-	margin-bottom: em(10);
-	font-size: em(14);
+	margin-bottom: 10px;
+	font-size: 14px;
 	line-height: 140%;
 }
 
@@ -131,17 +119,17 @@ article {
 }
 
 .name {
-    font-size: em(11);
+    font-size: 11px;
     @media (min-width: $small) {
-		font-size: em(12);
+		font-size: 12px;
 	}
 }
 
 .value-labels {
-	font-size: em(11);
+	font-size: 11px;
 	fill: floralwhite;
     @media (min-width: $smedium) {
-		font-size: em(12);
+		font-size: 12px;
 	}
 }
  
@@ -156,10 +144,10 @@ line.median {
 }
 
 .tick text {
-	font-size: em(11);
+	font-size: 11px;
 	fill: $med-gray;
 	@media (min-width: $small) {
-		font-size: em(12);
+		font-size: 12px;
 	}
 }
 
@@ -174,15 +162,16 @@ line.median {
 }
 
 .sources-copy {
+	display: block;
 	margin-bottom: 5px;
 	padding-top: 10px;
 	border-top: 1px solid $med-gray;
 	color: $med-gray;
 	text-align: left;
-	font-size: em(11);
-	fill: $med-gray;
+	font-size: 11px;
+	line-height: 130%;
 	@media (min-width: $small) {
-		font-size: em(12);
+		font-size: 12px;
 	}
 }
 

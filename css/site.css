@@ -1,377 +1,20 @@
+/* line 770, ../sass/components/_mixins.scss */
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+  position: static;
+  overflow: visible;
+  clip: auto;
+  margin: 0;
+  width: auto;
+  height: auto;
+}
+
 /* !============================================= */
-/* ! Variables						  			  */
+/* ! Variables                      */
 /* !============================================= */
 /* !-- Universal ------------------------------------ */
 /* !-- Project ------------------------------------ */
 /* !-- Paths ------------------------------------ */
-/* line 15, ../sass/components/_reset.scss */
-* {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-}
-
-/* line 28, ../sass/components/_reset.scss */
-html, body, div, span, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-abbr, address, cite, code,
-del, dfn, em, img, ins, kbd, q, samp,
-small, strong, sub, sup, var,
-b, i,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section, summary,
-time, mark, audio, video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  outline: 0;
-  vertical-align: baseline;
-  background: transparent;
-}
-
-/* line 38, ../sass/components/_reset.scss */
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
-  display: block;
-}
-
-/* line 44, ../sass/components/_reset.scss */
-img {
-  line-height: 0;
-  vertical-align: middle;
-}
-
-/* line 46, ../sass/components/_reset.scss */
-nav ul {
-  list-style: none;
-}
-
-/* line 48, ../sass/components/_reset.scss */
-blockquote, q {
-  quotes: none;
-}
-
-/* line 51, ../sass/components/_reset.scss */
-blockquote:before, blockquote:after,
-q:before, q:after {
-  content: '';
-  content: none;
-}
-
-/* line 53, ../sass/components/_reset.scss */
-a {
-  margin: 0;
-  padding: 0;
-  font-size: 100%;
-  vertical-align: baseline;
-  background: transparent;
-}
-
-/* line 55, ../sass/components/_reset.scss */
-ins {
-  background-color: #ff9;
-  color: #000;
-  text-decoration: none;
-}
-
-/* line 57, ../sass/components/_reset.scss */
-mark {
-  background-color: #ff9;
-  color: #000;
-  font-style: italic;
-  font-weight: bold;
-}
-
-/* line 59, ../sass/components/_reset.scss */
-del {
-  text-decoration: line-through;
-}
-
-/* line 61, ../sass/components/_reset.scss */
-abbr[title], dfn[title] {
-  border-bottom: 1px dotted;
-  cursor: help;
-}
-
-/* line 64, ../sass/components/_reset.scss */
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
-
-/* line 66, ../sass/components/_reset.scss */
-hr {
-  display: block;
-  height: 1px;
-  border: 0;
-  border-top: 1px solid #ccc;
-  margin: 1em 0;
-  padding: 0;
-}
-
-/* line 68, ../sass/components/_reset.scss */
-input, select {
-  vertical-align: middle;
-}
-
-/* line 81, ../sass/components/_reset.scss */
-body {
-  -webkit-overflow-scrolling: touch;
-}
-
-/* line 83, ../sass/components/_reset.scss */
-select, input, textarea, button {
-  font: 99% sans-serif;
-}
-
-/* line 88, ../sass/components/_reset.scss */
-pre, code, kbd, samp {
-  font-family: monospace, sans-serif;
-}
-
-/* line 96, ../sass/components/_reset.scss */
-body, select, input, textarea {
-  color: #444;
-}
-
-/* line 105, ../sass/components/_reset.scss */
-h1, h2, h3, h4, h5, h6 {
-  font-weight: bold;
-}
-
-/* line 108, ../sass/components/_reset.scss */
-html {
-  overflow-y: scroll;
-}
-
-/* line 112, ../sass/components/_reset.scss */
-a:hover, a:active {
-  outline: none;
-}
-
-/* line 117, ../sass/components/_reset.scss */
-ul, ol {
-  list-style: none;
-}
-
-/* line 118, ../sass/components/_reset.scss */
-ol {
-  list-style-type: decimal;
-}
-
-/* line 121, ../sass/components/_reset.scss */
-nav ul, nav li {
-  margin: 0;
-}
-
-/* line 123, ../sass/components/_reset.scss */
-small {
-  font-size: 85%;
-}
-
-/* line 124, ../sass/components/_reset.scss */
-strong, th {
-  font-weight: bold;
-}
-
-/* line 126, ../sass/components/_reset.scss */
-td, td img {
-  vertical-align: top;
-}
-
-/* line 128, ../sass/components/_reset.scss */
-sub {
-  vertical-align: sub;
-  font-size: smaller;
-}
-
-/* line 129, ../sass/components/_reset.scss */
-sup {
-  vertical-align: super;
-  font-size: smaller;
-}
-
-/* line 131, ../sass/components/_reset.scss */
-pre {
-  padding: 15px;
-  white-space: pre;
-  white-space: pre-wrap;
-  white-space: pre-line;
-  word-wrap: break-word;
-}
-
-/* line 141, ../sass/components/_reset.scss */
-textarea {
-  overflow: auto;
-}
-
-/* line 143, ../sass/components/_reset.scss */
-.ie6 legend, .ie7 legend {
-  margin-left: -7px;
-}
-
-/* line 147, ../sass/components/_reset.scss */
-input[type="radio"] {
-  vertical-align: text-bottom;
-}
-
-/* line 148, ../sass/components/_reset.scss */
-input[type="checkbox"] {
-  vertical-align: bottom;
-}
-
-/* line 149, ../sass/components/_reset.scss */
-.ie7 input[type="checkbox"] {
-  vertical-align: baseline;
-}
-
-/* line 150, ../sass/components/_reset.scss */
-.ie6 input {
-  vertical-align: text-bottom;
-}
-
-/* line 153, ../sass/components/_reset.scss */
-label, input[type=button], input[type=submit], button {
-  cursor: pointer;
-}
-
-/* line 156, ../sass/components/_reset.scss */
-button, input, select, textarea {
-  margin: 0;
-}
-
-/* line 160, ../sass/components/_reset.scss */
-input:invalid, textarea:invalid {
-  border-radius: 1px;
-  -moz-box-shadow: 0px 0px 5px red;
-  -webkit-box-shadow: 0px 0px 5px red;
-  box-shadow: 0px 0px 5px red;
-}
-
-/* line 167, ../sass/components/_reset.scss */
-.no-boxshadow input:invalid,
-.no-boxshadow textarea:invalid {
-  background-color: #f0dddd;
-}
-
-/* line 173, ../sass/components/_reset.scss */
-::-moz-selection {
-  background: #1d78af;
-  color: white;
-  text-shadow: none;
-}
-
-/* line 174, ../sass/components/_reset.scss */
-::selection {
-  background: #1d78af;
-  color: white;
-  text-shadow: none;
-}
-
-/* line 177, ../sass/components/_reset.scss */
-a:link {
-  -webkit-tap-highlight-color: #1d78af;
-}
-
-/* line 181, ../sass/components/_reset.scss */
-button {
-  width: auto;
-  overflow: visible;
-}
-
-/* line 185, ../sass/components/_reset.scss */
-.ie7 img {
-  -ms-interpolation-mode: bicubic;
-}
-
-/* line 193, ../sass/components/_reset.scss */
-.clearfix:before, .clearfix:after {
-  content: "\0020";
-  display: block;
-  height: 0;
-  visibility: hidden;
-}
-
-/* line 197, ../sass/components/_reset.scss */
-.clearfix:after {
-  clear: both;
-}
-
-/* line 199, ../sass/components/_reset.scss */
-.clearfix {
-  zoom: 1;
-}
-
-/* line 207, ../sass/components/_reset.scss */
-.a11y-only {
-  position: absolute !important;
-  clip: rect(1px 1px 1px 1px);
-  clip: rect(1px, 1px, 1px, 1px);
-}
-
-@font-face {
-  font-family: 'Portrait Text Web';
-  src: url("/fonts/PortraitText-Regular-Web.eot");
-  src: url("/fonts/PortraitText-Regular-Web.eot?#iefix") format("embedded-opentype"), url("/fonts/PortraitText-Regular-Web.woff") format("woff"), url("/fonts/PortraitText-Regular-Web.ttf") format("truetype"), url("/fonts/PortraitText-Regular-Web.svg#Portrait Text Web") format("svg");
-  font-weight: 400;
-  font-style: normal;
-  font-stretch: normal;
-}
-
-@font-face {
-  font-family: 'Portrait Text Web';
-  src: url("/fonts/PortraitText-RegularItalic-Web.eot");
-  src: url("/fonts/PortraitText-RegularItalic-Web.eot?#iefix") format("embedded-opentype"), url("/fonts/PortraitText-RegularItalic-Web.woff") format("woff"), url("/fonts/PortraitText-RegularItalic-Web.ttf") format("truetype"), url("/fonts/PortraitText-RegularItalic-Web.svg#Portrait Text Web") format("svg");
-  font-weight: 400;
-  font-style: italic;
-  font-stretch: normal;
-}
-
-/* line 793, ../sass/components/_mixins.scss */
-.visuallyhidden.focusable:active,
-.visuallyhidden.focusable:focus {
-  clip: auto;
-  height: auto;
-  margin: 0;
-  overflow: visible;
-  position: static;
-  width: auto;
-}
-
-/* line 7, ../sass/components/_layout.scss */
-.ui-block:last-child,
-.ui-block.last {
-  margin-right: 0;
-}
-
-/* line 7, ../sass/partials/_reset.scss */
-button {
-  background: none;
-  border: none;
-  padding: 0;
-  color: #222222;
-  outline: none;
-}
-
-/* line 15, ../sass/partials/_reset.scss */
-a {
-  color: #222222;
-  text-decoration: none;
-}
-
-/* line 20, ../sass/partials/_reset.scss */
-::selection {
-  background-color: #909090;
-}
-
-/* line 23, ../sass/partials/_reset.scss */
-::-moz-selection {
-  background-color: #909090;
-}
-
 @font-face {
   font-weight: 500;
   font-style: normal;
@@ -583,21 +226,8 @@ a {
   src: url("http://www.fastcodesign.com/fonts/caslonfs/caslonfs-medium_italic-webfont.eot?#iefix") format("eot"), url("http://www.fastcodesign.com/fonts/caslonfs/caslonfs-medium_italic-webfont.woff") format("woff"), url("http://www.fastcodesign.com/fonts/caslonfs/caslonfs-medium_italic-webfont.ttf") format("truetype"), url("http://www.fastcodesign.com/fonts/caslonfs/caslonfs-medium_italic-webfont.svg#webfontydPYhPC6") format("svg");
 }
 
-/* line 197, ../sass/partials/_type.scss */
-.inline-link {
-  -webkit-transition: color 0.2s ease-in-out;
-  -moz-transition: color 0.2s ease-in-out;
-  -o-transition: color 0.2s ease-in-out;
-  transition: color 0.2s ease-in-out;
-  color: #7a7a7a;
-}
-/* line 34, ../sass/components/_mixins.scss */
-.inline-link:hover {
-  color: #222222;
-}
-
 /* line 201, ../sass/partials/_type.scss */
-body {
+.graphic-article {
   font-weight: 300;
   font-style: normal;
   font-size: 16px;
@@ -605,206 +235,173 @@ body {
 }
 
 /* line 209, ../sass/partials/_type.scss */
-h1, h2, h3, h4, h5, h6, .graphic-game {
-  color: #222222;
+.graphic-article h1, h2, h3, h4, h5, h6 {
   font-weight: 500;
   font-style: normal;
   font-family: "FCKaiserCond", Helvetica, Arial, sans-serif;
   text-rendering: optimizeLegibility;
 }
 
-/* line 23, ../sass/site.scss */
-body {
+/* line 25, ../sass/site.scss */
+.graphic-article {
   margin: 0 auto;
-  padding-top: 1.25em;
   max-width: 623px;
   height: 100%;
-}
-@media (min-width: 400px) {
-  /* line 23, ../sass/site.scss */
-  body {
-    padding: 1.25em;
-  }
-}
-@media (min-width: 680px) {
-  /* line 23, ../sass/site.scss */
-  body {
-    padding-top: 2.5em;
-  }
-}
-@media (min-width: 1070px) {
-  /* line 23, ../sass/site.scss */
-  body {
-    padding-top: 3.75em;
-  }
-}
-
-/* line 39, ../sass/site.scss */
-article {
-  margin: 0 auto;
-  padding: 0 1.25em;
-  max-width: 623px;
-  height: 100%;
-  border-right: 1px solid #ededed;
-  border-left: 1px solid #ededed;
   background: white;
 }
-@media (min-width: 680px) {
-  /* line 39, ../sass/site.scss */
-  article {
-    padding: 0 1.25em;
-  }
-}
 
-/* line 52, ../sass/site.scss */
+/* line 38, ../sass/site.scss */
 .graphic-header {
   position: relative;
-  margin-bottom: 0.625em;
+  margin-bottom: 10px;
 }
 
-/* line 60, ../sass/site.scss */
+/* line 46, ../sass/site.scss */
 .graphic-title {
   margin-bottom: 20px;
-  font-size: 3em;
+  font-size: 48px;
   line-height: 100%;
 }
 @media (min-width: 680px) {
-  /* line 60, ../sass/site.scss */
+  /* line 46, ../sass/site.scss */
   .graphic-title {
-    font-size: 3.75em;
+    font-size: 60px;
   }
 }
 
-/* line 78, ../sass/site.scss */
+/* line 64, ../sass/site.scss */
 .graphic-dek {
-  margin-bottom: 0.3125em;
+  display: block;
+  margin-bottom: 5px;
   font-weight: 600;
-  font-size: 1em;
+  font-size: 16px;
   font-family: "MuseoSans",Helvetica,Arial,sans-serif;
   line-height: 120%;
 }
 
-/* line 91, ../sass/site.scss */
+/* line 78, ../sass/site.scss */
 #chart {
-  margin-bottom: 0.625em;
+  margin-bottom: 10px;
 }
 
-/* line 95, ../sass/site.scss */
+/* line 82, ../sass/site.scss */
 .body-copy {
-  margin-bottom: 1.25em;
+  display: block;
+  margin-bottom: 20px;
   line-height: 150%;
 }
 
-/* line 100, ../sass/site.scss */
+/* line 88, ../sass/site.scss */
 .graphic-dek {
-  font-size: 1.25em;
+  font-size: 20px;
 }
 
-/* line 104, ../sass/site.scss */
+/* line 92, ../sass/site.scss */
 .graphic-copy {
-  margin-bottom: 0.625em;
-  font-size: 0.875em;
+  margin-bottom: 10px;
+  font-size: 14px;
   line-height: 140%;
 }
 
-/* line 110, ../sass/site.scss */
+/* line 98, ../sass/site.scss */
 .graphic-container {
   padding: 10px;
   background-color: floralwhite;
 }
 
-/* line 115, ../sass/site.scss */
+/* line 103, ../sass/site.scss */
 .bar rect {
   stroke: #fff;
   shape-rendering: crispEdges;
 }
 
-/* line 120, ../sass/site.scss */
+/* line 108, ../sass/site.scss */
 .bar rect.background {
   fill: #eee;
 }
 
-/* line 125, ../sass/site.scss */
+/* line 113, ../sass/site.scss */
 .bar .audience {
   fill: #b681ff;
 }
-/* line 128, ../sass/site.scss */
+/* line 116, ../sass/site.scss */
 .bar:nth-of-type(9) .audience {
   fill: #ffb581;
 }
 
-/* line 133, ../sass/site.scss */
+/* line 121, ../sass/site.scss */
 .name {
-  font-size: 0.6875em;
+  font-size: 11px;
 }
 @media (min-width: 400px) {
-  /* line 133, ../sass/site.scss */
+  /* line 121, ../sass/site.scss */
   .name {
-    font-size: 0.75em;
+    font-size: 12px;
   }
 }
 
-/* line 140, ../sass/site.scss */
+/* line 128, ../sass/site.scss */
 .value-labels {
-  font-size: 0.6875em;
+  font-size: 11px;
   fill: floralwhite;
 }
 @media (min-width: 680px) {
-  /* line 140, ../sass/site.scss */
+  /* line 128, ../sass/site.scss */
   .value-labels {
-    font-size: 0.75em;
+    font-size: 12px;
   }
 }
 
-/* line 148, ../sass/site.scss */
+/* line 136, ../sass/site.scss */
 .axis line {
   stroke: #ccc;
   stroke-width: 1;
 }
 
-/* line 153, ../sass/site.scss */
+/* line 141, ../sass/site.scss */
 line.median {
   stroke: #777;
   stroke-width: 1;
 }
 
-/* line 158, ../sass/site.scss */
+/* line 146, ../sass/site.scss */
 .tick text {
-  font-size: 0.6875em;
+  font-size: 11px;
   fill: #999999;
 }
 @media (min-width: 400px) {
-  /* line 158, ../sass/site.scss */
+  /* line 146, ../sass/site.scss */
   .tick text {
-    font-size: 0.75em;
+    font-size: 12px;
   }
 }
 
-/* line 166, ../sass/site.scss */
+/* line 154, ../sass/site.scss */
 .domain {
   fill: none;
   stroke: #999999;
   stroke-width: 1;
 }
 
-/* line 172, ../sass/site.scss */
+/* line 160, ../sass/site.scss */
 .event-year {
   fill: #999999;
 }
 
-/* line 176, ../sass/site.scss */
+/* line 164, ../sass/site.scss */
 .sources-copy {
+  display: block;
   margin-bottom: 5px;
   padding-top: 10px;
   border-top: 1px solid #999999;
   color: #999999;
   text-align: left;
-  font-size: 0.6875em;
-  fill: #999999;
+  font-size: 11px;
+  line-height: 130%;
 }
 @media (min-width: 400px) {
-  /* line 176, ../sass/site.scss */
+  /* line 164, ../sass/site.scss */
   .sources-copy {
-    font-size: 0.75em;
+    font-size: 12px;
   }
 }

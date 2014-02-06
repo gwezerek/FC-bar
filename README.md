@@ -1,5 +1,4 @@
 #FC-bar
-======
 
 ## Dependencies
 

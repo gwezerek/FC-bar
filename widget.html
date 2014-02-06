@@ -1,42 +1,19 @@
-<!doctype html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!-->
-<html class="no-js">
-<!--<![endif]-->
-
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Telecasts</title>
-    <meta name="viewport" content="width=device-width">
-
-    <link rel="stylesheet" href="css/site.css">
-
-    <script src="http://d3js.org/d3.v3.min.js"></script>
-    <script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
-    <script src="bower_components/jquery/jquery.js"></script>
-
-</head>
-
-<body>
-     <article class="graphic-article">
+ <article class="graphic-article">
     <div class="quiz-mod">
-        <div class="graphic-container">
+    	<div class="graphic-container">
             <div id="chart">
-                <h2 class="graphic-dek">Audience Reach (in&nbsp;millions)</h2>
-                <p class="graphic-copy">In the absence of a “Most Watched TV Shows of All Time” database, we scoured the web for candidates, at all times trying our best to compare apples to apples. Below are nine of our finds, which include a few smaller telecasts like the Super Bowl for perspective's&nbsp;sake.</p>
+                <span class="graphic-dek">Audience Reach (in&nbsp;millions)</span>
+                <span class="graphic-copy">In the absence of a “Most Watched TV Shows of All Time” database, we scoured the web for candidates, at all times trying our best to compare apples to apples. Below are nine of our finds, which include a few smaller telecasts like the Super Bowl for perspective's&nbsp;sake.</span>
 
             </div>
-            <p class="sources-copy">Because no organization collects audience data from every country, we relied on a few estimated figures from countries such as China, or organizations like FIFA or the UEFA. Periodical&nbsp;events are represented by their most popular broadcast. Due to the piecemeal nature of the data, we’ve tried to be as transparent as possible: Click on any bar to visit the source for that&nbsp;datum.</p>
+            <span class="sources-copy">Because no organization collects audience data from every country, we relied on a few estimated figures from countries such as China, or organizations like FIFA or the UEFA. Periodical&nbsp;events are represented by their most popular broadcast. Due to the piecemeal nature of the data, we’ve tried to be as transparent as possible: Click on any bar to visit the source for that&nbsp;datum.</span>
         </div>
     </div>
 
     <!-- D3 LAYOUT -->
     <script type="text/javascript">
         var labels,
-            url = "http://f.fastcompany.net/asset_files/-/2014/01/31/telecasts.csv",
+            url = "http://www.fastcodesign.com/asset_files/-/2014/01/31/telecasts.csv",
             margin = {
                 top: 30,
                 right: 20,
@@ -113,10 +90,10 @@
 
             // Links surrounding bars
             var links = bars.append("a")
-                .attr("xlink:href",function(d) {
+            	.attr("xlink:href",function(d) {
                     return d.source;
                 })
-                .attr("target", "_top");
+            	.attr("target", "_top");
 
             // Actual bars
             var bars = links.append('rect')
@@ -137,7 +114,7 @@
                 .style("font-weight","500");
 
             events.append('tspan')
-                .text(function(d) {
+            	.text(function(d) {
                     return " (" + d.year + ")";
                 })
                 .attr('class', 'event-year')
@@ -159,7 +136,7 @@
 
             // Our hacky method to give the first bar a unit
             var firstValue = d3.select(labels[0][0])
-                .text("984 mil.");
+            	.text("984 mil.");
 
         });
 
@@ -176,7 +153,6 @@
         }
 
         function resize() {
-
             console.log("meow");
 
             // Update width
@@ -209,7 +185,3 @@
         }
     </script>
 </article>
-
-</body>
-
-</html>
